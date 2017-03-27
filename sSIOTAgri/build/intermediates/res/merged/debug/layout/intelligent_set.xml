@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="-200dp"
+    android:background="@color/bgColor"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/SetTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/setMaginLeft"
+        android:text="@string/setControlTimeTitle" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/TableRowStarIni"
+            style="@style/setItemTopClickBg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/titleHeight"
+            android:onClick="StartTimeIni" >
+
+            <TextView
+                style="@style/ItemTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/startTime" />
+
+            <TextView
+                android:id="@+id/TextViewStartIni"
+                style="@style/SetContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/Margin10"
+                android:drawableRight="@drawable/arrow_right_light"
+                android:tag="startIni" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRowEndIni"
+            style="@style/setItemBottomClickBg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/titleHeight"
+            android:onClick="EndTimeIni" >
+
+            <TextView
+                style="@style/ItemTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/endTime" />
+
+            <TextView
+                android:id="@+id/TextViewEndIni"
+                style="@style/SetContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/Margin10"
+                android:drawableRight="@drawable/arrow_right_light"
+                android:tag="endIni" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowTimeErrorInte"
+            style="@style/setItemBg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/MarginMini"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/textViewStartError"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/errorTimeStarMoreEnd"
+                android:textColor="@color/errorColor" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/TextViewDeviceStartTitle"
+        style="@style/SetTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/setMaginLeft"
+        android:tag="0"
+        android:text="@string/setInitDevice1Title" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TableRow
+            style="@style/setItemMiniBg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextViewSen1"
+                style="@style/setDetailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:minHeight="32.0dip"
+                android:minWidth="80.0dip"
+                android:singleLine="true"
+                android:tag="start"
+                android:text="选择传感器" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/TextViewSenOp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/MarginMini"
+                    android:layout_marginRight="@dimen/MarginMini"
+                    android:drawableRight="@drawable/ic_spinner_arrow_select"
+                    android:tag=">"
+                    android:text="@string/opMore"
+                    android:textColor="@color/otherSubTextColor"
+                    android:textSize="@dimen/subTextSize" />
+
+                <EditText
+                    android:id="@+id/textViewVa1"
+                    style="@style/setDetailEditText"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:ellipsize="none"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewVa1Unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/TextViewDeviceEndTitle"
+        style="@style/SetTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/setMaginLeft"
+        android:tag="0"
+        android:text="@string/setInitDevice2TitleStop" />
+
+    <TableLayout
+        style="@style/setItemMiniBg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/titleHeight"
+            android:layout_marginBottom="4.0dip"
+            android:layout_marginTop="4.0dip" >
+
+            <TextView
+                android:id="@+id/TextViewSen2"
+                style="@style/setDetailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:minHeight="32.0dip"
+                android:minWidth="80.0dip"
+                android:singleLine="true"
+                android:tag="end"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/TextViewSenOp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/MarginMini"
+                    android:layout_marginRight="@dimen/MarginMini"
+                    android:drawableRight="@drawable/ic_spinner_arrow_select"
+                    android:tag=">"
+                    android:text="@string/opMore"
+                    android:textColor="@color/otherSubTextColor"
+                    android:textSize="@dimen/subTextSize" />
+
+                <EditText
+                    android:id="@+id/textViewVa2"
+                    style="@style/setDetailEditText"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:ellipsize="none"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewVa2Unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/Margin12"
+        android:layout_marginTop="@dimen/Margin12" >
+
+        <TableRow
+            android:id="@+id/TableRowTimeIni"
+            style="@style/setItemTopClickBg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="TimeIni" >
+
+            <TextView
+                android:id="@+id/text_max_duration"
+                style="@style/ItemTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/setTime" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center|right" >
+
+                <TextView
+                    android:id="@+id/TextViewTimeIni"
+                    style="@style/SetContentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/susTime" />
+
+                <TextView
+                    style="@style/SetContentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/Margin10"
+                    android:drawableRight="@drawable/arrow_right_light"
+                    android:text="@string/minute" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRowSpandIni"
+            style="@style/setItemBottomClickBg"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/subMenuHeight"
+            android:onClick="SpandIni" >
+
+            <TextView
+                style="@style/ItemTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/setSpand" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center|right" >
+
+                <TextView
+                    android:id="@+id/TextViewpandIni"
+                    style="@style/SetContentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/intervalTime" />
+
+                <TextView
+                    style="@style/SetContentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/Margin10"
+                    android:drawableRight="@drawable/arrow_right_light"
+                    android:text="@string/minute" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        style="@style/setItemBg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/Margin12" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/ItemTitleText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/MarginMini"
+                    android:text="@string/state" />
+
+                <TextView
+                    android:id="@+id/textViewIntComp"
+                    style="@style/SetTitleTextColor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sensorSetControlStartState" />
+            </LinearLayout>
+
+            <ToggleButton
+                android:id="@+id/toggleButtonSetIni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/setMagin"
+                android:background="@drawable/set_toggle"
+                android:checked="true"
+                android:focusable="false"
+                android:tag="Ini"
+                android:textOff=""
+                android:textOn="" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

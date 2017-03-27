@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/menu/menu_control.xml",
+        "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/menu/menu_control.xml"
+    },
+    {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/menu/menu_monitor.xml",
+        "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/menu/menu_monitor.xml"
+    },
+    {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/menu/menu_old_ui.xml",
+        "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/menu/menu_old_ui.xml"
+    },
+    {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/menu/menu_f_main.xml",
+        "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/menu/menu_f_main.xml"
+    },
+    {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/menu/menu_ctr_detail.xml",
+        "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/menu/menu_ctr_detail.xml"
+    },
+    {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/menu/menu_video_frag.xml",
+        "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/menu/menu_video_frag.xml"
+    },
+    {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/menu/menu_his.xml",
+        "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/menu/menu_his.xml"
+    },
+    {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/menu/menu_landfacility.xml",
+        "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/menu/menu_landfacility.xml"
+    },
+    {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/menu/main.xml"
+    }
+]

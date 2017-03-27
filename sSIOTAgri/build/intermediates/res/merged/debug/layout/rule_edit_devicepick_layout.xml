@@ -1,0 +1,80 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <include layout="@layout/title_bar" />
+
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/bgColor"
+		    android:layout_margin="10dp"
+		    android:orientation="vertical" >
+		
+		    <TableLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:focusable="true"
+		        android:focusableInTouchMode="true" >
+		
+		        <TableRow
+		            style="@style/setItemBgClickBg"
+		            android:layout_width="wrap_content"
+		            android:layout_height="@dimen/subMenuHeight"
+		            android:layout_marginTop="@dimen/Margin"
+		            android:onClick="ClickDevicePick" >
+		
+		            <TextView
+		                style="@style/ItemTitleText"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:background="@null"
+		                android:text="被控设备:" />
+		
+		            <TextView
+		                android:id="@+id/txt_deviceselect"
+		                style="@style/SetContentText"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="1"
+		                android:drawablePadding="@dimen/Margin10"
+		                android:drawableRight="@drawable/arrow_right_light"
+		                android:gravity="right"
+		                android:text="请选择" />
+		        </TableRow>
+		        
+		        
+		        <LinearLayout 
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal">
+		            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center_vertical"
+		                android:padding="5dp"
+		                android:text="添加连续动作"/>
+		            <ImageView 
+		                android:id="@+id/add_onoff"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="right"
+		                android:padding="5dp"
+		                android:src="@drawable/add_select"/>
+		        </LinearLayout>
+		        
+		        <ListView
+		            android:id="@+id/list_onoff" 
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"/>
+		        
+		    </TableLayout>
+		    
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

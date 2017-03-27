@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="match_parent"
+    android:layout_height="74dp"
+    android:background="@drawable/device_list_padding_drawable" >
+
+<!--     xmlns:fresco="http://schemas.android.com/apk/res-auto" -->
+<!--         fresco:actualImageScaleType="fitCenter" -->
+<!--     <com.facebook.drawee.view.SimpleDraweeView -->
+<!--         android:id="@+id/icon" -->
+<!--         android:layout_width="56.0dip" -->
+<!--         android:layout_height="56.0dip" -->
+<!--         android:layout_alignParentLeft="true" -->
+<!--         android:layout_centerVertical="true" -->
+<!--         android:layout_marginLeft="24.0dip" /> -->
+
+    <TextView 
+        android:id="@+id/node_icon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/node_normal"/>
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="74.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/client_all_column_remove"
+        android:drawablePadding="69.0dip"
+        android:gravity="center_vertical"
+        android:textColor="@color/black_80_transparent"
+        android:text="节点名称"
+        android:textSize="14sp" />
+    
+    
+
+</RelativeLayout>

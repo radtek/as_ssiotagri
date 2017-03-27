@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<!--     <ScrollView -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="match_parent" > -->
+
+<!--         <LinearLayout -->
+<!--             android:id="@+id/field_regular" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:orientation="vertical" > -->
+
+<!--  使得嵌套的list能够完全显示 com.ssiot.remote.yun.unit.All -->
+           
+            
+<!--         </LinearLayout> -->
+<!--     </ScrollView> -->
+    
+     <ListView
+               android:id="@android:id/list"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:dividerHeight="10dp"
+               android:divider="@color/transparent" 
+               android:padding="10dp" />
+
+</android.support.v4.widget.SwipeRefreshLayout>

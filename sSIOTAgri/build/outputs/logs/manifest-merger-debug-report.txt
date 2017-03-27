@@ -1,0 +1,1026 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:2:1-532:12
+	package
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:3:5-29
+		INJECTED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml
+		INJECTED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml
+		INJECTED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml
+	android:versionCode
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml
+		INJECTED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:25.3.0] /home/gejingbo/.android/build-cache/5e5ba618d3272f62f3657d47161e7ebdf430d13f/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] /home/gejingbo/.android/build-cache/008ac363c45c6f8f2e0450b0cff025b1ce1d7b8e/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.0] /home/gejingbo/.android/build-cache/526a232247d9187985578a84fda342b3083b216d/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:25.3.0] /home/gejingbo/.android/build-cache/9f26524c1afd893f087d5aa90265eb32053176c4/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.0] /home/gejingbo/.android/build-cache/464998b2c7e7bb9b7195e5350d7ab7885ff13c5a/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.0] /home/gejingbo/.android/build-cache/3dadc194ceede30b6a4fef8dde8b5cf3fa7ea052/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.0] /home/gejingbo/.android/build-cache/4847ea23eb1dcbc66472130c03fc79e2d8095727/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:recyclerview-v7:25.3.0] /home/gejingbo/.android/build-cache/0602a6dc4852da48c8b92bd7841b15fac5771ef9/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-ui:25.3.0] /home/gejingbo/.android/build-cache/0ee7bc3272c2f17e2f43eb2205f5e3a7cae8a8ff/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.0] /home/gejingbo/.android/build-cache/0ced0896b24d03756a014751b97d74bed257aa1c/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:multidex:1.0.1] /home/gejingbo/.android/build-cache/35cd7ff4b5da1f679a537037dde232011d3f6907/output/AndroidManifest.xml:18:5-42
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.0] /home/gejingbo/.android/build-cache/5e5ba618d3272f62f3657d47161e7ebdf430d13f/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:9:9-38
+		INJECTED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml
+		INJECTED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:8:9-35
+		INJECTED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml
+		INJECTED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:11:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:12:22-76
+uses-permission#android.permission.VIBRATE
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:13:5-66
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:13:22-63
+uses-permission#android.permission.FLASHLIGHT
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:14:5-69
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:14:22-66
+uses-permission#android.permission.CAMERA
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:15:5-65
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:15:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:16:5-81
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:16:22-78
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:17:5-68
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:17:22-65
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:18:5-81
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:18:22-78
+uses-feature#android.hardware.camera
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:20:5-60
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:20:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:21:5-70
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:21:19-67
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:23:5-71
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:23:22-68
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:24:5-80
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:24:22-77
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:25:5-84
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:25:22-81
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:26:22-76
+uses-permission#android.permission.RESTART_PACKAGES
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:29:5-75
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:29:22-72
+uses-permission#android.permission.GET_TASKS
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:30:5-68
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:30:22-65
+uses-permission#android.permission.WRITE_OWNER_DATA
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:33:5-75
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:33:22-72
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:38:5-75
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:38:22-72
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:42:5-81
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:42:22-78
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:44:5-76
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:44:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:45:5-76
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:45:22-73
+uses-permission#android.permission.READ_LOGS
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:46:5-68
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:46:22-65
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:47:5-78
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:47:22-75
+uses-permission#android.permission.CHANGE_CONFIGURATION
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:48:5-79
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:48:22-76
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:59:5-71
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:59:22-68
+permission#com.videogo.open.permission.C2D_MESSAGE
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:62:5-64:47
+	android:protectionLevel
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:64:9-44
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:63:9-63
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:66:5-82
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:66:22-79
+uses-permission#com.videogo.open.permission.C2D_MESSAGE
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:67:5-79
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:67:22-76
+uses-permission#android.permission.CHANGE_WIFI_MULTICAST_STATE
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:68:5-86
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:68:22-83
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:69:5-80
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:69:22-77
+uses-permission#android.permission.BAIDU_LOCATION_SERVICE
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:70:5-81
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:70:22-78
+application
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:72:5-530:19
+MERGED from [com.android.support:appcompat-v7:25.3.0] /home/gejingbo/.android/build-cache/5e5ba618d3272f62f3657d47161e7ebdf430d13f/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] /home/gejingbo/.android/build-cache/008ac363c45c6f8f2e0450b0cff025b1ce1d7b8e/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.0] /home/gejingbo/.android/build-cache/526a232247d9187985578a84fda342b3083b216d/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.0] /home/gejingbo/.android/build-cache/9f26524c1afd893f087d5aa90265eb32053176c4/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.0] /home/gejingbo/.android/build-cache/464998b2c7e7bb9b7195e5350d7ab7885ff13c5a/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.0] /home/gejingbo/.android/build-cache/3dadc194ceede30b6a4fef8dde8b5cf3fa7ea052/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.0] /home/gejingbo/.android/build-cache/4847ea23eb1dcbc66472130c03fc79e2d8095727/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.0] /home/gejingbo/.android/build-cache/0ee7bc3272c2f17e2f43eb2205f5e3a7cae8a8ff/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.0] /home/gejingbo/.android/build-cache/0ced0896b24d03756a014751b97d74bed257aa1c/output/AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:76:9-41
+	android:allowBackup
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:74:9-35
+	android:icon
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:75:9-45
+	android:theme
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:77:9-40
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:73:9-39
+meta-data#com.baidu.lbsapi.API_KEY
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:78:9-80:64
+	android:value
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:80:13-61
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:79:13-52
+service#com.baidu.location.f
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:82:9-85:41
+	android:enabled
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:84:13-35
+	android:process
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:85:13-38
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:83:13-48
+activity#com.ssiot.fish.FishMainActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:87:9-95:20
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:89:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:88:13-59
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:90:13-94:29
+action#android.intent.action.MAIN
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:91:17-69
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:91:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:93:17-77
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:93:27-74
+activity#com.ssiot.remote.LoginActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:107:9-109:48
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:109:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:108:13-58
+activity#com.ssiot.remote.RegisterAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:110:9-112:48
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:112:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:111:13-56
+activity#com.ssiot.remote.myzxing.MipcaActivityCapture
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:122:9-126:63
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:125:13-49
+	android:windowSoftInputMode
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:126:13-60
+	android:configChanges
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:124:13-63
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:123:13-73
+activity#com.ssiot.remote.dahuavideo.LiveActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:127:9-130:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:130:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:129:13-56
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:128:13-68
+activity#com.ssiot.remote.dahuavideo.DahuaLiveActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:131:9-134:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:134:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:133:13-56
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:132:13-73
+activity#com.ssiot.remote.hikvision.RTSPVideo
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:135:9-138:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:138:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:137:13-56
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:136:13-64
+activity#com.ssiot.remote.expert.DiagnoseFishSelectActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:139:9-142:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:142:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:141:13-56
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:140:13-78
+activity#com.ssiot.remote.hikvision.VideoActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:143:9-146:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:146:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:145:13-56
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:144:13-68
+activity#com.ssiot.remote.BrowserActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:147:9-150:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:150:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:149:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:148:13-60
+receiver#com.ssiot.remote.receiver.SsiotReceiver
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:152:9-165:20
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:152:19-73
+intent-filter#com.ssiot.agri.SHOWMSG
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:153:13-155:29
+action#com.ssiot.agri.SHOWMSG
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:154:17-65
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:154:25-62
+intent-filter#android.intent.action.BOOT_COMPLETED
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:156:13-158:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:157:17-79
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:157:25-76
+intent-filter#com.ssiot.agri.update.downfinish+com.ssiot.agri.update.downloadprogress+com.ssiot.agri.update.error+com.ssiot.agri.update.versiongot
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:159:13-164:29
+action#com.ssiot.agri.update.versiongot
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:160:17-75
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:160:25-72
+action#com.ssiot.agri.update.downloadprogress
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:161:17-81
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:161:25-78
+action#com.ssiot.agri.update.downfinish
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:162:17-75
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:162:25-72
+action#com.ssiot.agri.update.error
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:163:17-70
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:163:25-67
+service#com.ssiot.remote.SsiotService
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:167:9-173:19
+	android:exported
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:169:13-37
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:168:13-57
+intent-filter#com.ssiot.remote.SsiotService
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:170:13-172:29
+action#com.ssiot.remote.SsiotService
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:171:17-72
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:171:25-69
+activity#com.ssiot.fish.question.QuestionListActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:175:9-178:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:178:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:177:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:176:13-72
+activity#com.ssiot.fish.question.QuestionDetailListActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:179:9-184:55
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:183:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:182:13-45
+	android:windowSoftInputMode
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:184:13-52
+	android:configChanges
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:181:13-63
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:180:13-78
+activity#com.ssiot.fish.question.QuestionNewActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:185:9-188:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:188:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:187:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:186:13-71
+activity#com.ssiot.fish.CompanyListActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:189:9-192:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:192:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:191:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:190:13-62
+activity#com.ssiot.fish.CompanyDetailActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:193:9-196:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:196:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:195:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:194:13-64
+activity#com.ssiot.fish.MarketNewsActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:197:9-200:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:200:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:199:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:198:13-61
+activity#com.ssiot.fish.VideoListActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:201:9-204:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:204:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:203:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:202:13-60
+activity#com.ssiot.fish.SettingActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:205:9-208:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:208:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:207:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:206:13-58
+activity#com.ssiot.remote.UpdateDialogActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:209:9-213:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:212:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:211:13-45
+	android:theme
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:213:13-49
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:210:13-65
+activity#com.ssiot.remote.expert.SymptomAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:216:9-219:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:219:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:218:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:217:13-62
+activity#com.ssiot.remote.expert.SolutionAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:220:9-223:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:223:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:222:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:221:13-63
+activity#com.ssiot.remote.expert.WaterSolutionAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:224:9-227:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:227:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:226:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:225:13-68
+activity#com.ssiot.remote.expert.WaterColorDiagnoseAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:228:9-231:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:231:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:230:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:229:13-73
+activity#com.ssiot.remote.yun.monitor.MonitorAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:232:9-235:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:235:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:234:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:233:13-67
+activity#com.ssiot.remote.yun.monitor.BaiduMapAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:236:9-239:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:239:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:238:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:237:13-68
+activity#com.ssiot.remote.NodePickerAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:240:9-244:63
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:243:13-49
+	android:windowSoftInputMode
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:244:13-60
+	android:configChanges
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:242:13-63
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:241:13-58
+activity#com.ssiot.remote.aliyun.MsgListAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:245:9-248:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:248:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:247:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:246:13-62
+activity#com.ssiot.remote.aliyun.TxtAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:249:9-252:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:252:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:251:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:250:13-58
+activity#com.ssiot.remote.yun.detail.FarmDetailPagerActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:253:9-256:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:256:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:255:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:254:13-79
+activity#com.ssiot.remote.yun.detail.sensors.FarmDetailSensorPagerAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:257:9-260:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:260:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:259:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:258:13-88
+activity#com.ssiot.remote.yun.detail.cntrols.FarmDetailCtrlerPagerActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:261:9-265:75
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:264:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:263:13-45
+	android:windowSoftInputMode
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:265:13-72
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:262:13-93
+activity#com.ssiot.remote.yun.detail.cntrols.ControlSetAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:266:9-270:75
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:269:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:268:13-45
+	android:windowSoftInputMode
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:270:13-72
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:267:13-77
+activity#com.ssiot.remote.yun.detail.cntrols.IntelliSetAct_v2
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:271:9-275:75
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:274:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:273:13-45
+	android:windowSoftInputMode
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:275:13-72
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:272:13-80
+activity#com.ssiot.remote.yun.detail.cntrols.EditCtrRuleBase_v3
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:276:9-280:75
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:279:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:278:13-45
+	android:windowSoftInputMode
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:280:13-72
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:277:13-82
+activity#com.ssiot.remote.yun.WheelValAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:281:9-285:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:284:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:283:13-45
+	android:theme
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:285:13-49
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:282:13-60
+activity#com.ssiot.remote.yun.TimePickDiaAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:286:9-290:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:289:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:288:13-45
+	android:theme
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:290:13-49
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:287:13-63
+activity#com.ssiot.remote.yun.detail.sensors.AlarmRuleSetAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:291:9-294:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:294:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:293:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:292:13-79
+activity#com.ssiot.remote.yun.MainMenuAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:295:9-298:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:298:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:297:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:296:13-60
+activity#com.ssiot.remote.yun.sta.StatisticsAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:299:9-302:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:302:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:301:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:300:13-66
+activity#com.ssiot.remote.yun.sta.StaLineAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:303:9-306:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:306:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:305:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:304:13-63
+activity#com.ssiot.remote.yun.sta.StaBarAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:307:9-310:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:310:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:309:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:308:13-62
+activity#com.ssiot.remote.yun.sta.StaWindOraAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:311:9-314:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:314:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:313:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:312:13-66
+activity#com.ssiot.remote.yun.MainAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:315:9-324:20
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:318:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:317:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:316:13-56
+activity#com.ssiot.remote.yun.SettingActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:325:9-328:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:328:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:327:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:326:13-64
+activity#com.ssiot.remote.yun.history.ProductHistoryAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:329:9-332:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:332:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:331:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:330:13-74
+activity#com.ssiot.remote.yun.expert.ExpertSystemAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:333:9-336:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:336:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:335:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:334:13-71
+activity#com.ssiot.remote.yun.manage.ProductManageActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:337:9-340:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:340:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:339:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:338:13-77
+activity#com.ssiot.remote.yun.manage.ItemListAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:341:9-344:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:344:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:343:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:342:13-67
+activity#com.ssiot.remote.yun.manage.ProductBatchDetailAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:345:9-348:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:348:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:347:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:346:13-77
+activity#com.ssiot.remote.yun.manage.ProductPlanDetailAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:349:9-352:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:352:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:351:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:350:13-76
+activity#com.ssiot.remote.yun.manage.task.TaskActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:353:9-356:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:356:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:355:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:354:13-73
+activity#com.ssiot.remote.yun.manage.task.TaskNewActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:357:9-360:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:360:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:359:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:358:13-76
+activity#com.ssiot.remote.yun.manage.task.TaskReceiverAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:361:9-364:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:364:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:363:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:362:13-76
+activity#com.ssiot.remote.yun.manage.task.TaskGetDetailAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:365:9-368:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:368:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:367:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:366:13-77
+activity#com.ssiot.remote.yun.manage.task.TaskReportNewAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:369:9-372:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:372:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:371:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:370:13-77
+activity#com.ssiot.remote.yun.manage.InputsInEditAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:373:9-376:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:376:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:375:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:374:13-71
+activity#com.ssiot.remote.yun.manage.InputsOutEditAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:377:9-380:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:380:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:379:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:378:13-72
+activity#com.ssiot.remote.yun.manage.EditFertilizerAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:381:9-384:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:384:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:383:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:382:13-73
+activity#com.ssiot.remote.yun.manage.EditPesticideAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:385:9-388:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:388:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:387:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:386:13-72
+activity#com.ssiot.remote.yun.manage.ProductsPackEditAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:389:9-392:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:392:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:391:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:390:13-75
+activity#com.ssiot.remote.yun.manage.BatchEditAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:393:9-396:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:396:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:395:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:394:13-68
+activity#com.ssiot.remote.yun.manage.EditProductPlanAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:397:9-400:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:400:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:399:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:398:13-74
+activity#com.ssiot.remote.yun.manage.TaskPickAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:401:9-404:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:404:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:403:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:402:13-67
+activity#com.ssiot.remote.yun.manage.EditTaskMouldAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:405:9-408:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:408:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:407:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:406:13-72
+activity#com.ssiot.remote.yun.manage.EnableTaskAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:409:9-412:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:412:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:411:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:410:13-69
+activity#com.ssiot.remote.yun.manage.EditGrowthAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:413:9-416:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:416:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:415:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:414:13-69
+activity#com.ssiot.remote.yun.manage.EditInputsLogAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:417:9-420:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:420:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:419:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:418:13-72
+activity#com.ssiot.remote.yun.manage.EditDiseaseLogAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:421:9-424:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:424:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:423:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:422:13-73
+activity#com.ssiot.remote.yun.manage.ProductsInEditAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:425:9-428:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:428:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:427:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:426:13-73
+activity#com.ssiot.remote.yun.manage.ProductsPackDetailAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:429:9-432:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:432:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:431:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:430:13-77
+activity#com.ssiot.remote.yun.manage.BatchManageAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:433:9-436:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:436:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:435:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:434:13-70
+activity#com.ssiot.remote.yun.admin.FacilityManageAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:437:9-440:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:440:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:439:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:438:13-72
+activity#com.ssiot.fish.facility.GetLocationActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:441:9-444:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:444:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:443:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:442:13-71
+activity#com.ssiot.remote.yun.admin.FacilityEditAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:445:9-448:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:448:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:447:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:446:13-70
+activity#com.ssiot.remote.yun.admin.LandEditAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:449:9-452:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:452:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:451:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:450:13-66
+activity#com.ssiot.remote.yun.admin.DeviceTagEditorAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:453:9-456:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:456:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:455:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:454:13-73
+activity#com.ssiot.remote.expert.WaterAnalysisLauncherAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:459:9-462:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:462:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:461:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:460:13-76
+activity#com.ssiot.remote.expert.FacilityNodeListAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:463:9-466:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:466:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:465:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:464:13-71
+activity#com.ssiot.remote.expert.ManualDataEditAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:467:9-471:55
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:470:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:469:13-45
+	android:windowSoftInputMode
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:471:13-52
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:468:13-69
+activity#com.ssiot.fish.WeatherLaunchAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:472:9-475:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:475:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:474:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:473:13-59
+activity#com.ssiot.remote.expert.WaterColorSolutionAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:476:9-479:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:479:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:478:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:477:13-73
+activity#com.ssiot.fish.ArticleListAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:480:9-483:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:483:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:482:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:481:13-57
+activity#com.ssiot.remote.yun.NewsAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:484:9-487:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:487:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:486:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:485:13-56
+activity#com.ssiot.remote.weather.JuheWeatherAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:488:9-491:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:491:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:490:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:489:13-67
+activity#com.ssiot.remote.HttpAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:492:9-502:20
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:496:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:495:13-31
+	android:icon
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:494:13-43
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:493:13-52
+activity#com.ssiot.remote.yun.admin.DeviceRegistAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:503:9-506:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:506:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:505:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:504:13-70
+activity#com.ssiot.remote.weather.AliYunWeatherAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:507:9-510:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:510:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:509:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:508:13-69
+activity#com.videogo.ui.realplay.EZPrepareAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:511:9-515:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:514:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:513:13-45
+	android:theme
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:515:13-49
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:512:13-64
+activity#com.videogo.ui.realplay.EZRealPlayActivity
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:516:9-520:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:520:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:519:13-45
+	android:configChanges
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:518:13-74
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:517:13-70
+activity#com.ssiot.remote.yun.detail.sensors.NodeChartDetailAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:521:9-524:52
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:524:13-49
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:523:13-45
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:522:13-82
+activity#com.ssiot.remote.yun.sta.CompositeChartAct
+ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:525:9-529:57
+	android:screenOrientation
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:528:13-50
+	android:label
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:529:13-45
+	android:configChanges
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:527:13-74
+	android:name
+		ADDED from /home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/AndroidManifest.xml:526:13-70
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.0] /home/gejingbo/.android/build-cache/5e5ba618d3272f62f3657d47161e7ebdf430d13f/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] /home/gejingbo/.android/build-cache/008ac363c45c6f8f2e0450b0cff025b1ce1d7b8e/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.0] /home/gejingbo/.android/build-cache/526a232247d9187985578a84fda342b3083b216d/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.0] /home/gejingbo/.android/build-cache/9f26524c1afd893f087d5aa90265eb32053176c4/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.0] /home/gejingbo/.android/build-cache/464998b2c7e7bb9b7195e5350d7ab7885ff13c5a/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.0] /home/gejingbo/.android/build-cache/3dadc194ceede30b6a4fef8dde8b5cf3fa7ea052/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.0] /home/gejingbo/.android/build-cache/4847ea23eb1dcbc66472130c03fc79e2d8095727/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.0] /home/gejingbo/.android/build-cache/0602a6dc4852da48c8b92bd7841b15fac5771ef9/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-core-ui:25.3.0] /home/gejingbo/.android/build-cache/0ee7bc3272c2f17e2f43eb2205f5e3a7cae8a8ff/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.0] /home/gejingbo/.android/build-cache/0ced0896b24d03756a014751b97d74bed257aa1c/output/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.0] /home/gejingbo/.android/build-cache/5e5ba618d3272f62f3657d47161e7ebdf430d13f/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.0] /home/gejingbo/.android/build-cache/5e5ba618d3272f62f3657d47161e7ebdf430d13f/output/AndroidManifest.xml:26:9-47

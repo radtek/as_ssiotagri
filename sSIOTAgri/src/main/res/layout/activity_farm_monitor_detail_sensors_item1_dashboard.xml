@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@android:id/icon"
+        android:layout_width="@dimen/tcagri_farm_device_icon_size"
+        android:layout_height="@dimen/tcagri_farm_device_icon_size"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_section_alert"
+        android:visibility="gone" />
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:orientation="vertical" > -->
+
+    
+
+    <TextView
+        android:id="@android:id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="none"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="传感器名称"
+        android:textColor="#ff888888"
+        android:textSize="14.0sp" />
+    <!-- </LinearLayout> -->
+
+    <com.demo.xclcharts.view.DialChart05View
+        android:id="@+id/circle_view"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_gravity="center" />
+    
+    <TextView
+        android:id="@android:id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="none"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="传感器读数"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#ff222222"
+        android:textSize="18.0sp" />
+    
+    <TextView 
+        android:id="@+id/value_means"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="none"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="安全"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#ff888888"
+        android:textSize="14.0sp"/>
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+<!--     <include layout="@layout/module_a_3_title_bar_return_righttext" /> -->
+
+    <include 
+        layout="@layout/title_bar"/>
+    
+    <EditText
+        android:id="@+id/name_edit" 
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:editable="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/tag_margin_right"
+        android:layout_marginRight="@dimen/tag_margin_right"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_input_normal"/>
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_tag_title_height"
+                android:layout_marginLeft="@dimen/tag_margin_right"
+                android:gravity="bottom"
+                android:paddingBottom="@dimen/edit_tag_title_padding_bottom"
+                android:text="已包含的设备"
+                android:textColor="#60000000"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="@dimen/tag_margin_right"
+                android:layout_marginRight="@dimen/tag_margin_right"
+                android:background="@color/class_U" />
+
+<!--             <com.xiaomi.smarthome.library.common.widget.FlowGroup -->
+<!--                 android:id="@+id/tag_owned_container" -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginLeft="@dimen/tag_margin_left" -->
+<!--                 android:layout_marginRight="@dimen/tag_margin_right" -->
+<!--                 android:layout_marginTop="@dimen/tag_margin_top" /> -->
+            
+            <com.ssiot.remote.yun.unit.AllListView 
+                android:id="@+id/tag_owned_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tag_margin_left"
+                android:layout_marginRight="@dimen/tag_margin_right"
+                android:layout_marginTop="@dimen/tag_margin_top"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/tag_margin_right" >
+
+<!--                 android:background="@drawable/tag_add_bg" -->
+                <TextView
+                    android:id="@+id/tag_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="添加"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+<!--                 android:background="@drawable/tag_delete_bg" -->
+                <TextView
+                    android:id="@+id/tag_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    
+                    android:paddingBottom="@dimen/tag_text_padding_vert"
+                    android:paddingTop="@dimen/tag_text_padding_vert"
+                    android:text="tag_delete"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="@dimen/tag_margin_right"
+                android:layout_marginRight="@dimen/tag_margin_right"
+                android:layout_marginTop="13.0dip"
+                android:background="@color/class_U" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_tag_title_height"
+                android:layout_marginLeft="@dimen/tag_margin_right"
+                android:gravity="bottom"
+                android:paddingBottom="@dimen/edit_tag_title_padding_bottom"
+                android:text="不包含设备"
+                android:textColor="#60000000"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="@dimen/tag_margin_right"
+                android:layout_marginRight="@dimen/tag_margin_right"
+                android:background="@color/class_U" />
+
+<!--             <com.xiaomi.smarthome.library.common.widget.FlowGroup -->
+<!--                 android:id="@+id/tag_recommend_container" -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginLeft="@dimen/tag_margin_left" -->
+<!--                 android:layout_marginRight="@dimen/tag_margin_right" -->
+<!--                 android:layout_marginTop="@dimen/tag_margin_top" /> -->
+            <com.ssiot.remote.yun.unit.AllListView 
+                android:id="@+id/tag_recommend_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tag_margin_left"
+                android:layout_marginRight="@dimen/tag_margin_right"
+                android:layout_marginTop="@dimen/tag_margin_top"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

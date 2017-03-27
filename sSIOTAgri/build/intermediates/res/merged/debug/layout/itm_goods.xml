@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+<!--     com.ssiot.remote.view.Square -->
+    <ImageView 
+        android:id="@+id/goods_img"
+        android:layout_width="@dimen/mainItemHeigh"
+        android:layout_height="@dimen/mainItemHeigh"
+        android:src="@drawable/node_image_bg"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="产品名称"
+            android:maxLines="2" />
+        
+        <TextView 
+            android:id="@+id/goods_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goods_name"
+            android:text="产品详细介绍"
+            style="@style/Text7714"
+            android:textSize="12dp"
+            android:maxLines="2"/>
+        
+        <TextView
+            android:id="@+id/goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="￥0.00"
+            android:textColor="@color/red" />
+
+    </RelativeLayout>
+    
+    
+</LinearLayout>

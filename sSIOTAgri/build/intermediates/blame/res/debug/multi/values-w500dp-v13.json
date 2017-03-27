@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w500dp-v13/values-w500dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 54,
+                    "endOffset": 105
+                },
+                "from": {
+                    "file": "/home/gejingbo/.android/build-cache/8aa915bc91a8edc92546a358953682b5d8871d28/output/res/values-w500dp/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 176,
+                        "endColumn": 54,
+                        "endOffset": 226
+                    }
+                }
+            }
+        ]
+    }
+]

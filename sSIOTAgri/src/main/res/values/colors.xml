@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <color name="ampm_off">#ff404040</color>
+    <color name="ampm_on">#ffffffff</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="red">#ffee0000</color>
+    <color name="black">#ff000000</color>
+    <color name="grey">#ffaaaaaa</color>
+    <drawable name="grey">#ffaaaaaa</drawable>
+    <drawable name="ssiot_green">#ff69c911</drawable>
+    <color name="ssiotgreen">#ff69c911</color>
+    <color name="ssiot_title_yellow">#fff39800</color>
+    <color name="datalist_header">#ffeb6100</color>
+    <color name="datalist_green">#ff009944</color>
+
+    <color name="icon_yellow">#fffcdc</color>
+    <color name="icon_green">#d9f0ea</color>
+    <color name="icon_pink">#ffe0e0</color>
+    <color name="icon_purple">#eceeff</color>
+    <drawable name="icon_yellow">#fffcdc</drawable>
+    <drawable name="icon_green">#d9f0ea</drawable>
+    <drawable name="icon_pink">#ffe0e0</drawable>
+    <drawable name="icon_purple">#eceeff</drawable>
+    <color name="weather_line_orange">#ff9c00</color>
+    <color name="weather_line_blue">#30a4d5</color>
+
+    <!--曲线的颜色列表-->
+    <color name="color_1">#69c911</color>
+    <color name="color_2">#30a4d5</color>
+    <color name="color_3">#50326d</color>
+    <color name="color_4">#cc0000</color>
+    <color name="color_5">#434343</color>
+    <color name="color_6">#ff9900</color>
+    <color name="color_7">#00ffff</color>
+    <color name="color_8">#e06666</color>
+
+    <!--     二维码 -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+
+    <drawable name="radio_monitor_off">#ff8fc31f</drawable>
+    <drawable name="radio_monitor_on">#ff0000ff</drawable>
+    <color name="radio_on">#ff00ff00</color>
+
+    <color name="node_yellow">#fff39800</color>
+    <color name="data_bk_grey">#99e9e9e9</color>
+    <color name="node_bk_grey">#99c9c9c9</color>
+
+    <color name="grey_divider">#ffbfbfbf</color>
+    <color name="his_title_green">#ff50a700</color>
+    <color name="blue_0099cc">#ff0099cc</color>
+
+    <!-- 	copy 慧云 -->
+    <color name="titleColor">#ff333333</color>
+    <color name="errorColor">#fff08080</color>
+    <color name="otherSubTextColor">#ff777777</color>
+    <color name="DarkGreen">#ff2d8931</color>
+    <!-- 	<color name="DarkGreen">#ff2796de</color> -->
+    <!-- blue_2 ff2296ee 传感网app改为了二级绿色 -->
+    <color name="blue_2">#ff69c911</color>
+    <color name="aa">#ffaaaaaa</color>
+    <color name="c999999">#ff999999</color>
+    <color name="c777777">#ff777777</color>
+    <color name="bgColor">#fff0f0f0</color>
+    <color name="transparent">#00000000</color>
+    <color name="c333333">#ff333333</color>
+    <color name="itemPressColor">#ffc7d9bc</color>
+    <color name="device_offline_actived">#ffda646d</color>
+    <color name="device_warning_actived">#ffffb06e</color>
+    <color name="device_connect_actived">#ff2d8931</color>
+    <color name="device_connect_running">#ff00a0e9</color>
+    <color name="device_working_actived">#ff3394da</color>
+    <color name="Gray">#ffafafaf</color>
+    <color name="unRead">#ffff8c69</color>
+    <color name="tcagri_theme_main_bgcolor">#ff2d8931</color>
+    <color name="da">#ffdadada</color>
+    <color name="e5">#ffe5e5e5</color>
+
+    <color name="cicleColor">#ffcccccc</color>
+    <color name="shnesYellow">#ffe9d255</color>
+    <color name="yellow">#fff88e12</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="sta_line">#ff579522</color>
+    <color name="sta_high">#ff76bbb0</color>
+    <color name="sta_low">#ffb4dda1</color>
+    <color name="device_report_normal">#f02f7a16</color>
+
+
+    <!-- 	copy 渔业通 还是农医生？？-->
+    <color name="master_text_color_1">#ff333333</color>
+    <color name="master_grey_light_color">#fff2f2f2</color>
+    <color name="master_white_color">#ffffffff</color>
+    <color name="master_card_line_color">#ffd8d8d8</color>
+    <color name="master_text_color_2">#ff838383</color>
+    <color name="master_text_color_blue">#ff5072a8</color>
+    <color name="master_green_color">#ff8dcb4a</color>
+    <color name="master_green_deep_color">#ff417505</color>
+    <color name="master_grey_color">#ffeeeeee</color>
+    <color name="master_text_color_hint">#ffbebebe</color>
+    <color name="master_title_bar_color">#ff434343</color>
+    <color name="master_card_time_color">#ff929292</color>
+    <color name="master_gold_color">#fffcba42</color>
+    <color name="master_red_color">#ffd0132a</color>
+
+    <!-- 	copy from FloatActionMenu -->
+    <color name="default_normal">#ff0099cc</color> <!-- android.R.color.holo_blue_dark -->
+    <color name="default_pressed">#ff33b5e5</color> <!-- android.R.color.holo_blue_light -->
+    <color name="default_disabled">#aaa</color><!-- android.R.color.darker_gray -->
+
+    <!-- 	copy 萤石云 -->
+    <color name="gray_text">#adadad</color>
+    <color name="viewfinder_frame">#929292</color>
+    <color name="common_sub_text">#888888</color>
+    <color name="source_detection_btn_color">#48a9fb</color>
+    <color name="black_bg">#000000</color>
+    <color name="dark_bg_70p">#bb000000</color>
+    <color name="common_bg">#f0f0f3</color>
+    <color name="quality_focused_color">#448cf3</color>
+
+    <!-- 	copy迅雷 -->
+    <color name="half_white">#8fffffff</color>
+    <color name="common_blue">#ff1294f6</color>
+    <color name="common_blue_button_disable">#7f00ff99</color>
+    <color name="common_blue_button_hover">#ff00ff99</color>
+    <color name="common_blue_button_normal">#ff69c911</color>
+
+    <!--     copy 小米 -->
+    <color name="black_30_transparent">#40000000</color>
+    <color name="class_text_24">#ff0095f3</color>
+    <color name="class_text_20">#ff232323</color>
+    <color name="class_E">#ffbfbfbf</color>
+    <color name="black_70_transparent">#b2000000</color>
+    <color name="black_80_transparent">#cc000000</color>
+    <color name="class_U">#ffdfdfdf</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="40dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/hour_time"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="时间"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/hour_icon"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:src="@drawable/we_00"/>
+
+    <TextView
+        android:id="@+id/hour_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="0°"/>
+</LinearLayout>

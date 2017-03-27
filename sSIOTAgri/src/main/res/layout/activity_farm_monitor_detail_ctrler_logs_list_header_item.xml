@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="51.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="16.0dip"
+        android:text="操作记录"
+        android:textSize="20.0sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.5px"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:background="@color/Gray"
+        android:orientation="vertical" />
+
+</LinearLayout>

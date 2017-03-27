@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_fishnew"
+        layout="@layout/title_bar" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:shrinkColumns="0" >
+
+       <TableRow
+            android:id="@+id/row_croptype"
+            style="@style/setItemBgClickBg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/subMenuHeight"
+            android:onClick="ClickFunc" >
+
+            <TextView
+                style="@style/ItemTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="种类类别:" />
+
+            <TextView
+                android:id="@+id/txt_croptype"
+                style="@style/SetContentText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/Margin10"
+                android:drawableRight="@drawable/arrow_right_light"
+                android:gravity="right"
+                android:text="请选择" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/row_batchname"
+            style="@style/setItemBgClickBg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/subMenuHeight"
+            android:layout_marginTop="@dimen/Margin"
+            android:onClick="ClickFunc" >
+
+            <TextView
+                android:id="@+id/product_batchname"
+                style="@style/ItemTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="方案名称:" />
+            
+            <EditText
+                android:id="@+id/edit_batchname"
+                style="@style/ItemTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:hint="" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/row_tasks"
+            style="@style/setItemBgClickBg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/subMenuHeight"
+            android:layout_marginTop="@dimen/Margin"
+            android:onClick="ClickFunc" >
+
+            <TextView
+                style="@style/ItemTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="选择包含的任务:" />
+
+            <TextView
+                android:id="@+id/txt_tasks"
+                style="@style/SetContentText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/Margin10"
+                android:drawableRight="@drawable/arrow_right_light"
+                android:gravity="right"
+                android:text="请选择" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

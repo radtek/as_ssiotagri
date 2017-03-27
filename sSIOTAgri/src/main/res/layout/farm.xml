@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/mainMargin"
+        android:paddingRight="@dimen/mainMargin" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="96.0dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewAppName"
+                android:layout_width="fill_parent"
+                android:layout_height="96.0dip"
+                android:gravity="center"
+                android:paddingLeft="@dimen/Margin"
+                android:paddingRight="@dimen/Margin"
+                android:textColor="@color/DarkGreen"
+                android:textSize="@dimen/titleSize"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageViewTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@id/imageViewTop" />
+
+            <FrameLayout
+                android:id="@+id/FrameLayoutWarn"
+                style="@style/TextViewPaddingLeftRightSmallTopBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right|top" >
+
+                
+<!--                     android:src="@drawable/ic_actionbar_bulletin_green" -->
+                <ImageView
+                    android:id="@+id/imageViewWarn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null" />
+
+                
+<!--                     android:src="@drawable/ic_actionbar_bulletin_dot" -->
+                <ImageView
+                    android:id="@+id/imageViewFlag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:contentDescription="@null"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutMonitor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_bg_item_enter_select"
+            android:minHeight="100.0dip"
+            android:onClick="Monitor"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mainMargin"
+                android:layout_marginTop="@dimen/mainMargin"
+                android:contentDescription="监控中心"
+                android:src="@drawable/ic_nav_monitor" />
+
+            <TextView
+                style="@style/White16Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="@dimen/mainMargin"
+                android:layout_marginRight="@dimen/mainMargin"
+                android:text="监控中心" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutTop"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/mainItemHeigh"
+            android:layout_marginTop="@dimen/mainMargin"
+            android:baselineAligned="false"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:id="@+id/LinearLayoutSta"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/main_bg_item_enter_select"
+                android:onClick="Sta"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mainMargin"
+                    android:layout_marginTop="@dimen/mainMargin"
+                    android:contentDescription="报表中心"
+                    android:src="@drawable/ic_nav_report" />
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报表中心" />
+            </RelativeLayout>
+            
+            <View 
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:id="@+id/LinearLayoutTask"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/main_bg_item_enter_select"
+                android:onClick="Task"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mainMargin" >
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/mainMargin"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_nav_task" />
+
+<!--                     <TextView -->
+<!--                         android:id="@+id/textViewTaskCount" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_alignParentTop="true" -->
+<!--                         android:layout_alignRight="@id/imageView2" -->
+<!--                         android:background="@drawable/bg_nav_count" -->
+<!--                         android:gravity="center" -->
+<!--                         android:text="" -->
+<!--                         android:textColor="@color/white" -->
+<!--                         android:textSize="14.0sp" -->
+<!--                         android:visibility="gone" /> -->
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="任务中心" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutCenter"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/mainItemHeigh"
+            android:layout_marginTop="@dimen/mainMargin"
+            android:baselineAligned="false"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/LinearLayoutMsg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/main_bg_item_enter_select"
+                android:onClick="Msg"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mainMargin"
+                    android:layout_marginTop="@dimen/mainMargin" >
+
+                    
+<!--                         android:src="@drawable/ic_nav_msg" -->
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@null" />
+
+<!--                     android:background="@drawable/bg_nav_count" -->
+                    <TextView
+                        android:id="@+id/textViewMsgCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignRight="@id/imageView4"
+                        
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="14.0sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="交流中心" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/LinearLayoutHelp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/main_bg_item_enter_select"
+                android:onClick="Help"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                
+<!--                     android:src="@drawable/ic_nav_remote" -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mainMargin"
+                    android:contentDescription="远程协助" />
+
+                <TextView
+                    style="@style/MainItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="远程协助" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutFriend"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:baselineAligned="false"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="@dimen/titleHeight"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/list_item_select"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:onClick="showFriendList"
+                    android:paddingLeft="@dimen/mainImgMargin"
+                    android:paddingRight="@dimen/mainImgMargin" >
+
+                    <TextView
+                        style="@style/Text7716"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:drawableLeft="@drawable/ic_nav_contacts"
+                        android:drawablePadding="@dimen/mainMargin"
+                        android:gravity="center|left"
+                        android:text="通讯录" />
+
+<!--                     <TextView -->
+<!--                         android:id="@+id/TextViewFriendCount" -->
+<!--                         style="@style/Text3314" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="fill_parent" -->
+<!--                         android:drawableLeft="@drawable/ic_nav_remind" -->
+<!--                         android:drawablePadding="@dimen/mainMargin" -->
+<!--                         android:paddingRight="@dimen/Margin12" -->
+<!--                         android:visibility="gone" /> -->
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@null"
+                        android:src="@drawable/arrow_right_light" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/divide_h" />
+        </LinearLayout>
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="fill_parent" -->
+<!--             android:baselineAligned="false" -->
+<!--             android:gravity="center_vertical" > -->
+
+<!--             <LinearLayout -->
+<!--                 android:layout_width="0.0dip" -->
+<!--                 android:layout_height="@dimen/titleHeight" -->
+<!--                 android:layout_weight="1.0" -->
+<!--                 android:background="@drawable/list_item_select" -->
+<!--                 android:gravity="center_vertical" -->
+<!--                 android:onClick="Update" > -->
+
+<!--                 <LinearLayout -->
+<!--                     android:id="@+id/LinearLayoutUpdate" -->
+<!--                     android:layout_width="fill_parent" -->
+<!--                     android:layout_height="fill_parent" -->
+<!--                     android:layout_marginLeft="@dimen/mainImgMargin" -->
+<!--                     android:layout_weight="1.0" -->
+<!--                     android:gravity="center_vertical" > -->
+
+<!--                     <ImageView -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:contentDescription="@string/update" -->
+<!--                         android:src="@drawable/ic_nav_update" /> -->
+
+<!--                     <TextView -->
+<!--                         style="@style/Text7716" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="fill_parent" -->
+<!--                         android:layout_marginLeft="@dimen/mainMargin" -->
+<!--                         android:text="@string/update" /> -->
+<!--                 </LinearLayout> -->
+
+<!--                 <LinearLayout -->
+<!--                     android:id="@+id/LinearLayoutNew" -->
+<!--                     android:layout_width="fill_parent" -->
+<!--                     android:layout_height="fill_parent" -->
+<!--                     android:layout_marginLeft="@dimen/mainImgMargin" -->
+<!--                     android:layout_weight="1.0" -->
+<!--                     android:gravity="center" -->
+<!--                     android:visibility="gone" > -->
+
+<!--                     <ImageView -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:contentDescription="@null" -->
+<!--                         android:src="@drawable/ic_nav_remind" /> -->
+
+<!--                     <TextView -->
+<!--                         style="@style/Text3314" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="fill_parent" -->
+<!--                         android:layout_marginLeft="@dimen/mainMargin" -->
+<!--                         android:text="@string/hint_new_version" /> -->
+<!--                 </LinearLayout> -->
+
+<!--                 <ImageView -->
+<!--                     android:id="@+id/imageView3" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:contentDescription="@null" -->
+<!--                     android:paddingRight="@dimen/mainImgMargin" -->
+<!--                     android:src="@drawable/arrow_right_light" /> -->
+<!--             </LinearLayout> -->
+<!--         </LinearLayout> -->
+
+<!--         <include -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             layout="@layout/divide_h" /> -->
+
+<!--         <Button -->
+<!--             style="@style/Text7716" -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="0.0dip" -->
+<!--             android:layout_weight="1.0" -->
+<!--             android:background="@drawable/list_item_select2" -->
+<!--             android:drawableLeft="@drawable/ic_nav_setting" -->
+<!--             android:drawablePadding="@dimen/mainMargin" -->
+<!--             android:drawableRight="@drawable/arrow_right_light" -->
+<!--             android:gravity="center|left" -->
+<!--             android:minHeight="@dimen/titleHeight" -->
+<!--             android:onClick="Set" -->
+<!--             android:paddingLeft="@dimen/mainImgMargin" -->
+<!--             android:paddingRight="@dimen/mainImgMargin" -->
+<!--             android:text="@string/set" /> -->
+
+<!--         <include -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             layout="@layout/divide_h" -->
+<!--             android:visibility="gone" /> -->
+    </LinearLayout>
+
+</ScrollView>

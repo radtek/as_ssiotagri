@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+<!--     <android.support.v7.widget.Toolbar -->
+<!--         xmlns:app="http://schemas.android.com/apk/res-auto" -->
+<!--         android:id="@+id/title_layout" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:background="@color/DarkGreen" -->
+<!--         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" -->
+<!--         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" > -->
+
+<!--         <Button -->
+<!--             android:id="@+id/senPagebtn" -->
+<!--             style="?android:attr/buttonStyleToggle" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_gravity="center|right" -->
+<!--             android:layout_marginRight="12.0dip" -->
+<!--             android:background="@null" -->
+<!--             android:textColor="@color/white" -->
+<!--             android:visibility="gone" /> -->
+<!--     </android.support.v7.widget.Toolbar> -->
+
+    <FrameLayout
+        android:id="@+id/fragmentcontainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkGreen"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="46.0dip"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                style="@style/tcagri_farm_detail_tab_style"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:checked="true"
+                android:text="操作记录" />
+            
+            <RadioButton
+                android:id="@+id/radio1"
+                style="@style/tcagri_farm_detail_tab_style"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="设备设置" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/indicator"
+            android:layout_width="150.0dip"
+            android:layout_height="2.0dip"
+            android:background="@color/unRead" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@android:id/tabcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#bbbbbbbb" />
+<!--     <unit.MyViewPager -->
+<!--         android:id="@android:id/tabcontent" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" /> -->
+
+</LinearLayout>

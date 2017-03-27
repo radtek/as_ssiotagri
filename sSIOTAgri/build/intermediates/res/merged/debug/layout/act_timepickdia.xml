@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300.0dip"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/Margin" >
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:paddingRight="@dimen/Margin20"
+        android:text="TextView"
+        android:textColor="@color/DarkGreen"
+        android:textSize="16.0dip" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/divide_green" />
+
+<!--     <LinearLayout -->
+<!--         android:id="@+id/dia_content" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_gravity="center_horizontal" -->
+<!--         android:gravity="center" -->
+<!--         android:layout_marginTop="30dp" > -->
+
+<!--     </LinearLayout> -->
+	<include 
+	    layout="@layout/dia_date_time_pick"/>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider"
+        android:layout_marginTop="@dimen/Margin"
+        android:background="@drawable/divide_ccc" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip" >
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/tra_selector"
+            android:gravity="center"
+            android:onClick="Back"
+            android:text="返回"
+            android:textColor="@color/c999999"
+            android:textSize="16.0dip" />
+
+        <TextView
+            android:layout_width="@dimen/divider"
+            android:layout_height="fill_parent"
+            android:background="@drawable/divide_v_ccc" />
+
+        <Button
+            android:id="@+id/buttonSure"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/tra_selector"
+            android:gravity="center"
+            android:onClick="Sure"
+            android:text="确定"
+            android:textColor="@color/c333333"
+            android:textSize="16.0dip" />
+    </LinearLayout>
+
+</LinearLayout>

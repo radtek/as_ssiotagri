@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<include
+        android:id="@+id/title_fishnew"
+        layout="@layout/title_bar" />
+    
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:shrinkColumns="0" >
+        
+        <TableRow
+            android:id="@+id/row_productbatch"
+            style="@style/setItemBgClickBg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/subMenuHeight"
+            android:visibility="gone"
+            android:onClick="ClickFunc" >
+
+            <TextView
+                style="@style/ItemTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="批次:" />
+
+            <TextView
+                android:id="@+id/txt_productbatch"
+                style="@style/SetContentText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/Margin10"
+                android:drawableRight="@drawable/arrow_right_light"
+                android:gravity="right"
+                android:text="请选择" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/row_length"
+            style="@style/setItemBgClickBg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/subMenuHeight"
+            android:layout_marginTop="@dimen/Margin"
+            android:onClick="ClickFunc" >
+
+            <TextView
+                android:id="@+id/product_lenth"
+                style="@style/ItemTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="长度(cm):" />
+            
+            <EditText
+                android:id="@+id/edit_lenth"
+                style="@style/ItemTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:numeric="decimal"
+                android:background="@null"
+                android:hint="" />
+
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/row_sex"
+            style="@style/setItemBgClickBg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/subMenuHeight"
+            android:layout_marginTop="@dimen/Margin"
+            android:onClick="ClickFunc" >
+
+            <TextView
+                style="@style/ItemTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="雌雄分类:" />
+
+            <TextView
+                android:id="@+id/txt_sex"
+                style="@style/SetContentText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/Margin10"
+                android:drawableRight="@drawable/arrow_right_light"
+                android:gravity="right"
+                android:text="请选择" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/row_time"
+            style="@style/setItemBgClickBg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/subMenuHeight"
+            android:layout_marginTop="@dimen/Margin"
+            android:onClick="ClickFunc" >
+
+            <TextView
+                android:id="@+id/txt_time"
+                style="@style/ItemTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_span="2"
+                android:text="记录时间:" />
+        </TableRow>
+        
+        
+    </TableLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/Margin"
+        android:paddingRight="@dimen/Margin"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="产品图片:"/>
+        <ImageView 
+                android:id="@+id/growth_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="ClickFunc"
+                android:src="@drawable/icon_image_add"/>
+    </LinearLayout>
+
+</LinearLayout>

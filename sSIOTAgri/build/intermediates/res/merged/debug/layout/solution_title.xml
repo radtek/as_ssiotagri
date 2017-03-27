@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black"/>
+    
+    <LinearLayout 
+        android:id="@+id/report_titleholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+        
+        <TableLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="2"
+            android:stretchColumns="2"
+            android:layout_weight="1">
+
+            <TableRow
+                android:id="@+id/row_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/titleHeight"
+                 >
+
+                <TextView
+                    style="@style/ItemTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="检测日期:" />
+                
+                <View android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/txt_date"
+                    style="@style/SetContentText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                     />
+            </TableRow>
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"/>
+            
+            <TableRow
+                android:id="@+id/row_diseasename"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/titleHeight"
+                 >
+
+                <TextView
+                    style="@style/ItemTitleText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="病名:" />
+                
+                <View android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/txt_diseasename"
+                    style="@style/SetContentText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:padding="3dp"
+                     />
+            </TableRow>
+
+        </TableLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:layout_weight="0" />
+        
+        <TableLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="2"
+            android:stretchColumns="2"
+            android:layout_weight="1">
+
+            <TableRow
+                android:id="@+id/row_time"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/titleHeight"
+                 >
+
+                <TextView
+                    style="@style/ItemTitleText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="检测时间:" />
+                
+                <View android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/txt_time"
+                    style="@style/SetContentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                     />
+            </TableRow>
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"/>
+            
+            <TableRow
+                android:id="@+id/row_fishtype"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/titleHeight"
+                 >
+
+                <TextView
+                    style="@style/ItemTitleText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="种类:" />
+                
+                <View android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/txt_fishtype"
+                    style="@style/SetContentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                     />
+            </TableRow>
+
+        </TableLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black" />
+
+</LinearLayout>

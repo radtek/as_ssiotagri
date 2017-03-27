@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView 
+        android:id="@+id/app_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:paddingTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher"/>
+    
+    <TextView 
+        android:id="@+id/app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="0.0"/>
+    
+    <RelativeLayout 
+        android:id="@+id/checkupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_version"
+        android:padding="10dp"
+        android:background="@drawable/bg_card_normal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="版本更新"/>
+        
+        <TextView 
+            android:id="@+id/app_version_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:text="检查版本"/>
+        
+        <CheckBox 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:checked="true"
+            android:button="@drawable/check_circle_selector"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/alarm_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkupdate"
+        android:padding="10dp"
+        android:background="@drawable/bg_card_normal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="预警通知(请在设置中允许后台运行)"/>
+        
+        <CheckBox 
+            android:id="@+id/alarm_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:checked="true"
+            android:button="@drawable/check_circle_selector"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/offline_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alarm_relativelayout"
+        android:background="@drawable/bg_card_normal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="离线通知功能(点击选择节点)" />
+
+        <CheckBox
+            android:id="@+id/offline_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:button="@drawable/check_circle_selector"
+            android:checked="false" />
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/company_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="雨研(www.ssiot.com) 版权所有"
+        android:textSize="16sp"/>
+    
+    <TextView 
+        android:id="@+id/app_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/company_info"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="更多功能，敬请期待"
+        android:textSize="13sp"/>
+</RelativeLayout>

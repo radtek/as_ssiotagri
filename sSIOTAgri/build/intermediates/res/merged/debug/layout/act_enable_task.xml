@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgColor"
+    android:padding="@dimen/Margin"
+    android:orientation="vertical" >
+    
+    <include 
+        layout="@layout/title_bar"/>
+    
+    <TextView 
+        android:id="@+id/batch_str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/Margin"
+        android:text="批次描述"/>
+    
+    <TextView 
+        android:id="@+id/task_str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/Margin"
+        android:text="任务描述"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutRe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/Margin"
+        android:layout_margin="@dimen/Margin"
+        android:background="@drawable/bg_input_normal" >
+
+        <TextView
+            android:id="@+id/TextViewRe"
+            style="@style/MsgNew"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center|top"
+            android:paddingTop="10.0dip"
+            android:text="接收者" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutcontainer"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:divider="@drawable/divide_ccc"
+            android:minHeight="@dimen/msgHight"
+            android:orientation="vertical"
+            android:paddingRight="16.0dip"
+            android:paddingTop="5.0dip" />
+
+        <ImageView
+            android:id="@+id/imageViewAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/msgHight"
+            android:layout_marginRight="@dimen/Margin"
+            android:contentDescription="@null"
+            android:onClick="ClickAdd"
+            android:src="@drawable/add_select" />
+    </LinearLayout>
+
+</LinearLayout>

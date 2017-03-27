@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+    <EditText 
+        android:id="@+id/xpoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:numeric="decimal"
+        android:text="原始值"/>
+    
+    <EditText 
+        android:id="@+id/ypoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:numeric="decimal"
+        android:text="输出值"/>
+    
+    <Button 
+        android:id="@+id/point_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="删除"/>
+    
+</LinearLayout>

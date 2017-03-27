@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/Margin10"
+    android:paddingRight="@dimen/Margin10"
+    android:padding="10dp" >
+<!--     android:background="@drawable/tra_selector" -->
+
+    <ImageView
+        android:id="@+id/imageViewIcon"
+        android:layout_width="48.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:src="@drawable/ic_report_task_normal"
+        android:scaleType="centerInside" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:button="@drawable/check_selector"
+        android:checked="false"
+        android:visibility="visible" />
+    
+    <TextView
+        android:id="@+id/textViewTask"
+        style="@style/itemTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:layout_toRightOf="@id/imageViewIcon"
+        android:layout_toLeftOf="@id/checkBoxSel"
+        android:text="任务描述" />
+    
+</RelativeLayout>

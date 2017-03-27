@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkGreen" >
+
+        <TextView
+            android:id="@+id/facility_name"
+            style="@style/SetTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="设施名称"
+            android:paddingLeft="5dp"
+            android:textColor="@color/white" />
+
+<!--         <Button -->
+<!--             android:id="@+id/water_edit" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:background="@drawable/question_new_select" -->
+<!--             android:gravity="center_vertical" -->
+<!--             android:text="修改记录" -->
+<!--              /> -->
+        <Button
+            android:id="@+id/water_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="添加记录"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/node_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" />
+
+</LinearLayout>

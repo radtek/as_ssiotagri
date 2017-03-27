@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TableLayout 
+        android:id="@+id/tablelayoutbatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/Margin16"
+        android:paddingRight="@dimen/Margin16">
+        
+        <TableRow
+            android:id="@+id/row_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/Margin8"
+            android:layout_marginTop="@dimen/Margin8" >
+
+            <TextView
+                style="@style/MsgDetailContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/Margin"
+                android:layout_gravity="center_vertical"
+                android:text="批次名称" />
+
+            <TextView
+                android:id="@+id/batch_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/itemContent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="null" />
+    
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/row_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Margin8" >
+
+            <TextView
+                style="@style/MsgDetailContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/Margin"
+                android:layout_gravity="center_vertical"
+                android:text="苗种批次" />
+
+            <TextView
+                android:id="@+id/inputsin_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/itemContent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="n/a" />
+    
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/row_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Margin8" >
+
+            <TextView
+                style="@style/MsgDetailContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/Margin"
+                android:layout_gravity="center_vertical"
+                android:text="品种" />
+
+            <TextView
+                android:id="@+id/croptype_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/itemContent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="msg1" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/row_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Margin8" >
+
+            <TextView
+                style="@style/MsgDetailContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/Margin"
+                android:layout_gravity="center_vertical"
+                android:text="设施" />
+
+            <TextView
+                android:id="@+id/facility_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/itemContent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="大棚1,大棚2" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/row_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Margin8" >
+
+            <TextView
+                style="@style/MsgDetailContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/Margin"
+                android:layout_gravity="center_vertical"
+                android:text="责任人" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/itemContent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="n/a" />
+        </TableRow>
+        
+    </TableLayout>
+    
+    <ListView 
+        android:id="@+id/task_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        
+    </ListView>
+</LinearLayout>

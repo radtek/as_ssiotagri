@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/CurrentChart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" >
+
+        
+
+<!--         <TextView -->
+<!--             android:id="@+id/DataDate" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignBaseline="@id/ChartName" -->
+<!--             android:layout_alignBottom="@id/ChartName" -->
+<!--             android:layout_toRightOf="@id/ChartName" -->
+<!--             android:text="@id/DataDate" -->
+<!--             android:textColor="#ff888888" -->
+<!--             android:textSize="14.0sp" /> -->
+
+        <TextView
+            android:id="@+id/ChartName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11.0dip"
+            android:layout_marginTop="11.0dip"
+            android:text="图表名称"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#ff222222"
+            android:textSize="18.0sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@android:id/button2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8.0dip"
+            android:background="@null"
+            android:padding="8.0dip"
+            android:text="查看更多" />
+        <com.ssiot.remote.yun.unit.CantDragLayout
+            android:id="@+id/CurrentChartView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"/>
+    </RelativeLayout>
+
+<!--     <Button -->
+<!--         android:id="@android:id/button1" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="48.0dip" -->
+<!--         android:layout_gravity="center" -->
+<!--         android:layout_marginLeft="8.0dip" -->
+<!--         android:layout_marginRight="8.0dip" -->
+        
+<!--         android:text="与历史数据对比" -->
+<!--         android:textColor="#ffffffff" -->
+<!--         android:textSize="16.0sp" /> -->
+<!--     android:background="@drawable/green_btn_selector" -->
+
+    <ProgressBar
+        android:id="@android:id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="3.0dip" />
+
+    <RelativeLayout
+        android:id="@+id/OldChart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:id="@+id/OldChartView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:id="@+id/OldDataDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11.0dip"
+            android:layout_marginTop="11.0dip"
+            android:text="去年同期历史数据对比"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#ff222222"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+</LinearLayout>

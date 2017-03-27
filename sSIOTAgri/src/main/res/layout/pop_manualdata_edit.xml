@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dropmenu" >
+
+        <TableLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Margin10"
+            android:layout_marginLeft="@dimen/Margin10"
+            android:layout_marginTop="@dimen/Margin10"
+            android:layout_weight="1.0"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <TableRow
+                style="@style/LayoutPaddingMargin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/combo_enter_left_select"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10.0dip" >
+
+                <TextView
+                    style="@style/SetTitleTextColor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/Margin8"
+                    android:text="传感器:" />
+
+<!--                 <TextView -->
+<!--                     android:id="@+id/startTextView" -->
+<!--                     style="@style/ItemTitleText" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_weight="1.0" -->
+<!--                     android:maxLines="2" -->
+<!--                     android:text="" /> -->
+
+                <Spinner
+                    android:id="@+id/pop_sensor_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dialog" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TableRow
+                style="@style/LayoutPaddingMargin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/combo_enter_left_select"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10.0dip" >
+
+                <TextView
+                    style="@style/SetTitleTextColor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/Margin8"
+                    android:text="录入值:" />
+
+                <EditText
+                    android:id="@+id/value_edit"
+                    style="@style/ItemTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:numeric="decimal"
+                    android:text="" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="@dimen/divider"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/divide_v_ccc" />
+
+        <TextView
+            android:id="@+id/pop_add"
+            android:layout_width="46dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/Margin10"
+            android:layout_marginRight="@dimen/Margin10"
+            android:layout_marginTop="@dimen/Margin10"
+            android:background="@drawable/main_bg_item_enter_select"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/Margin10"
+            android:paddingRight="@dimen/Margin10"
+            android:text="@string/sure"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/itemTitle" />
+    </LinearLayout>
+
+</LinearLayout>

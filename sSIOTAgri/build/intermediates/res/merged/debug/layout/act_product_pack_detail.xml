@@ -1,0 +1,262 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tablelayoutpack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/Margin16"
+        android:paddingRight="@dimen/Margin16" >
+
+        <TableRow
+            android:id="@+id/row_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Margin8"
+            android:layout_marginTop="@dimen/Margin8" >
+
+            <TextView
+                style="@style/MsgDetailContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/Margin"
+                android:text="批次名称" />
+
+            <TextView
+                android:id="@+id/batch_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="N/A"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/itemContent" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Margin8" >
+
+            <TextView
+                style="@style/MsgDetailContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/Margin"
+                android:text="名称:" />
+
+            <TextView
+                android:id="@+id/productspack_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="N/A"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/itemContent" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Margin8" >
+
+            <TextView
+                style="@style/MsgDetailContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/Margin"
+                android:text="品种" />
+
+            <TextView
+                android:id="@+id/croptype_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="N/A"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/itemContent" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Margin8" >
+
+            <TextView
+                style="@style/MsgDetailContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/Margin"
+                android:text="规格" />
+
+            <TextView
+                android:id="@+id/format_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="N/A"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/itemContent" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Margin8" >
+
+            <TextView
+                style="@style/MsgDetailContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/Margin"
+                android:text="日期" />
+
+            <TextView
+                android:id="@+id/date_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="N/A"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/itemContent" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tablelayoutpackedits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/Margin16"
+        android:paddingRight="@dimen/Margin16"
+        android:stretchColumns="1" >
+
+        <TableRow
+            android:id="@+id/row_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Margin8"
+            android:layout_marginTop="@dimen/Margin8" >
+
+            <TextView
+                style="@style/MsgDetailContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/Margin"
+                android:text="商品描述:" />
+
+            <TextView
+                android:id="@+id/prodesc_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="N/A"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/itemContent" />
+
+            <Button
+                android:id="@+id/prodesc_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="修改"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/itemContent" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Margin8" >
+
+            <TextView
+                style="@style/MsgDetailContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/Margin"
+                android:text="公司描述:" />
+
+            <TextView
+                android:id="@+id/comdesc_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="N/A"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/itemContent" />
+
+            <Button
+                android:id="@+id/comdesc_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="修改"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/itemContent" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Margin8" >
+
+            <TextView
+                style="@style/MsgDetailContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/Margin"
+                android:text="溯源码:" />
+
+            <TextView
+                android:id="@+id/traceprofilecode_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="N/A"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/itemContent" />
+
+            <Button
+                android:id="@+id/trace_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="查看"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/itemContent" />
+        </TableRow>
+    </TableLayout>
+
+    <!-- <ListView -->
+    <!-- android:id="@+id/task_list" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginTop="10dp"> -->
+
+
+    <!-- </ListView> -->
+
+</LinearLayout>

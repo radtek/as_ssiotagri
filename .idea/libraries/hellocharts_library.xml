@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hellocharts-library">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/sSIOTAgri/libs/hellocharts-library.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

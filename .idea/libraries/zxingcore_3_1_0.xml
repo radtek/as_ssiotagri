@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="zxingcore-3.1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/sSIOTAgri/libs/zxingcore-3.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

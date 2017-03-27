@@ -1,0 +1,156 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From SSIOTAgri:
+* proguard-project.txt
+From recyclerview_lib_v7:
+* README.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.0.0
+android-support-v7-appcompat.jar => com.android.support:appcompat-v7:18.0.0
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+android-support-v7-appcompat => [com.android.support:appcompat-v7:18.0.0]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In recyclerview_lib_v7:
+* AndroidManifest.xml => recyclerview_lib_v7/src/main/AndroidManifest.xml
+* assets/ => recyclerview_lib_v7/src/main/assets
+* res/ => recyclerview_lib_v7/src/main/res/
+* src/ => recyclerview_lib_v7/src/main/java
+In SSIOTAgri:
+* AndroidManifest.xml => sSIOTAgri/src/main/AndroidManifest.xml
+* assets/ => sSIOTAgri/src/main/assets/
+* libs/BaiduLBS_Android.jar => sSIOTAgri/libs/BaiduLBS_Android.jar
+* libs/EZOpenSDK.jar => sSIOTAgri/libs/EZOpenSDK.jar
+* libs/HCNetSDK.jar => sSIOTAgri/libs/HCNetSDK.jar
+* libs/IPlaySDK.jar => sSIOTAgri/libs/IPlaySDK.jar
+* libs/ToUProxy.jar => sSIOTAgri/libs/ToUProxy.jar
+* libs/achartengine-1.1.0.jar => sSIOTAgri/libs/achartengine-1.1.0.jar
+* libs/armeabi/libAudioEngine.so => sSIOTAgri/src/main/jniLibs/armeabi/libAudioEngine.so
+* libs/armeabi/libBaiduMapSDK_base_v3_7_1.so => sSIOTAgri/src/main/jniLibs/armeabi/libBaiduMapSDK_base_v3_7_1.so
+* libs/armeabi/libBaiduMapSDK_map_v3_7_1.so => sSIOTAgri/src/main/jniLibs/armeabi/libBaiduMapSDK_map_v3_7_1.so
+* libs/armeabi/libCASClientSDK.so => sSIOTAgri/src/main/jniLibs/armeabi/libCASClientSDK.so
+* libs/armeabi/libCpuFeatures.so => sSIOTAgri/src/main/jniLibs/armeabi/libCpuFeatures.so
+* libs/armeabi/libDHProxyClient.so => sSIOTAgri/src/main/jniLibs/armeabi/libDHProxyClient.so
+* libs/armeabi/libHCAlarm.so => sSIOTAgri/src/main/jniLibs/armeabi/libHCAlarm.so
+* libs/armeabi/libHCCore.so => sSIOTAgri/src/main/jniLibs/armeabi/libHCCore.so
+* libs/armeabi/libHCCoreDevCfg.so => sSIOTAgri/src/main/jniLibs/armeabi/libHCCoreDevCfg.so
+* libs/armeabi/libHCDisplay.so => sSIOTAgri/src/main/jniLibs/armeabi/libHCDisplay.so
+* libs/armeabi/libHCGeneralCfgMgr.so => sSIOTAgri/src/main/jniLibs/armeabi/libHCGeneralCfgMgr.so
+* libs/armeabi/libHCIndustry.so => sSIOTAgri/src/main/jniLibs/armeabi/libHCIndustry.so
+* libs/armeabi/libHCPlayBack.so => sSIOTAgri/src/main/jniLibs/armeabi/libHCPlayBack.so
+* libs/armeabi/libHCPreview.so => sSIOTAgri/src/main/jniLibs/armeabi/libHCPreview.so
+* libs/armeabi/libHCVoiceTalk.so => sSIOTAgri/src/main/jniLibs/armeabi/libHCVoiceTalk.so
+* libs/armeabi/libPPVClientSDK.so => sSIOTAgri/src/main/jniLibs/armeabi/libPPVClientSDK.so
+* libs/armeabi/libPlayCtrl.so => sSIOTAgri/src/main/jniLibs/armeabi/libPlayCtrl.so
+* libs/armeabi/libPlayCtrl_v5.so => sSIOTAgri/src/main/jniLibs/armeabi/libPlayCtrl_v5.so
+* libs/armeabi/libPlayCtrl_v7.so => sSIOTAgri/src/main/jniLibs/armeabi/libPlayCtrl_v7.so
+* libs/armeabi/libRtspClientSDK.so => sSIOTAgri/src/main/jniLibs/armeabi/libRtspClientSDK.so
+* libs/armeabi/libStreamClientSDK.so => sSIOTAgri/src/main/jniLibs/armeabi/libStreamClientSDK.so
+* libs/armeabi/libStunClientSDK.so => sSIOTAgri/src/main/jniLibs/armeabi/libStunClientSDK.so
+* libs/armeabi/libSystemTransform.so => sSIOTAgri/src/main/jniLibs/armeabi/libSystemTransform.so
+* libs/armeabi/libTTSClientSDK.so => sSIOTAgri/src/main/jniLibs/armeabi/libTTSClientSDK.so
+* libs/armeabi/libUdpClient.so => sSIOTAgri/src/main/jniLibs/armeabi/libUdpClient.so
+* libs/armeabi/libaaccodec.so => sSIOTAgri/src/main/jniLibs/armeabi/libaaccodec.so
+* libs/armeabi/libaacdec.so => sSIOTAgri/src/main/jniLibs/armeabi/libaacdec.so
+* libs/armeabi/libadpcmdec.so => sSIOTAgri/src/main/jniLibs/armeabi/libadpcmdec.so
+* libs/armeabi/libamrcodec.so => sSIOTAgri/src/main/jniLibs/armeabi/libamrcodec.so
+* libs/armeabi/libamrdec.so => sSIOTAgri/src/main/jniLibs/armeabi/libamrdec.so
+* libs/armeabi/libconfigsdk.so => sSIOTAgri/src/main/jniLibs/armeabi/libconfigsdk.so
+* libs/armeabi/libcrypto.so => sSIOTAgri/src/main/jniLibs/armeabi/libcrypto.so
+* libs/armeabi/libdvr.so => sSIOTAgri/src/main/jniLibs/armeabi/libdvr.so
+* libs/armeabi/libezstreamclient.so => sSIOTAgri/src/main/jniLibs/armeabi/libezstreamclient.so
+* libs/armeabi/libgnustl_shared.so => sSIOTAgri/src/main/jniLibs/armeabi/libgnustl_shared.so
+* libs/armeabi/libh264dec_ansic.so => sSIOTAgri/src/main/jniLibs/armeabi/libh264dec_ansic.so
+* libs/armeabi/libh264dec_neon.so => sSIOTAgri/src/main/jniLibs/armeabi/libh264dec_neon.so
+* libs/armeabi/libhcnetsdk.so => sSIOTAgri/src/main/jniLibs/armeabi/libhcnetsdk.so
+* libs/armeabi/libhevcdec.so => sSIOTAgri/src/main/jniLibs/armeabi/libhevcdec.so
+* libs/armeabi/libhpr.so => sSIOTAgri/src/main/jniLibs/armeabi/libhpr.so
+* libs/armeabi/libjniplay.so => sSIOTAgri/src/main/jniLibs/armeabi/libjniplay.so
+* libs/armeabi/liblocSDK6a.so => sSIOTAgri/src/main/jniLibs/armeabi/liblocSDK6a.so
+* libs/armeabi/libmjpegdec.so => sSIOTAgri/src/main/jniLibs/armeabi/libmjpegdec.so
+* libs/armeabi/libmp2dec.so => sSIOTAgri/src/main/jniLibs/armeabi/libmp2dec.so
+* libs/armeabi/libmp3dec.so => sSIOTAgri/src/main/jniLibs/armeabi/libmp3dec.so
+* libs/armeabi/libmpeg4dec.so => sSIOTAgri/src/main/jniLibs/armeabi/libmpeg4dec.so
+* libs/armeabi/libnetsdk.so => sSIOTAgri/src/main/jniLibs/armeabi/libnetsdk.so
+* libs/armeabi/liboggdec.so => sSIOTAgri/src/main/jniLibs/armeabi/liboggdec.so
+* libs/armeabi/libopensslwrap.so => sSIOTAgri/src/main/jniLibs/armeabi/libopensslwrap.so
+* libs/armeabi/libplay.so => sSIOTAgri/src/main/jniLibs/armeabi/libplay.so
+* libs/armeabi/libpostproc.so => sSIOTAgri/src/main/jniLibs/armeabi/libpostproc.so
+* libs/armeabi/libprotobuf-lite.so => sSIOTAgri/src/main/jniLibs/armeabi/libprotobuf-lite.so
+* libs/armeabi/libsdk.so => sSIOTAgri/src/main/jniLibs/armeabi/libsdk.so
+* libs/armeabi/libssl.so => sSIOTAgri/src/main/jniLibs/armeabi/libssl.so
+* libs/armeabi/libstreamconvert.so => sSIOTAgri/src/main/jniLibs/armeabi/libstreamconvert.so
+* libs/armeabi/libudt.so => sSIOTAgri/src/main/jniLibs/armeabi/libudt.so
+* libs/commons-net-3.3.jar => sSIOTAgri/libs/commons-net-3.3.jar
+* libs/ezviz-openapi-android-sdk.jar => sSIOTAgri/libs/ezviz-openapi-android-sdk.jar
+* libs/frescolib.jar => sSIOTAgri/libs/frescolib.jar
+* libs/hellocharts-library.jar => sSIOTAgri/libs/hellocharts-library.jar
+* libs/ksoap2-android-assembly-3.3.0-jar-with-dependencies.jar => sSIOTAgri/libs/ksoap2-android-assembly-3.3.0-jar-with-dependencies.jar
+* libs/nineoldandroids-2.4.0.jar => sSIOTAgri/libs/nineoldandroids-2.4.0.jar
+* libs/xUtils-2.6.14.jar => sSIOTAgri/libs/xUtils-2.6.14.jar
+* libs/xcl-charts.jar => sSIOTAgri/libs/xcl-charts.jar
+* libs/zxingcore-3.1.0.jar => sSIOTAgri/libs/zxingcore-3.1.0.jar
+* res/ => sSIOTAgri/src/main/res/
+* src/ => sSIOTAgri/src/main/java/
+* src/com/ssiot/remote/yun/manage/.BatchEditAct.java.swp => sSIOTAgri/src/main/resources/com/ssiot/remote/yun/manage/.BatchEditAct.java.swp
+* src/com/ssiot/remote/yun/widget/.PicModelGridView.java.swp => sSIOTAgri/src/main/resources/com/ssiot/remote/yun/widget/.PicModelGridView.java.swp
+* mm_title_back_focused.9.PNG => mm_title_back_focused.9.png
+* mm_title_back_normal.9.PNG => mm_title_back_normal.9.png
+* mm_title_back_pressed.9.PNG => mm_title_back_pressed.9.png
+* mmtitle_bg_alpha.9.PNG => mmtitle_bg_alpha.9.png
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

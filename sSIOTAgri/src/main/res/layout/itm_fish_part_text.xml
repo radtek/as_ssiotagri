@@ -1,0 +1,10 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/part_txtview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:gravity="center"
+    android:textSize="@dimen/textsize_h2"
+    android:text="部位"
+    android:background="@drawable/graybtn_secetor"
+    ></TextView>

@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_marginTop="1px">
+    
+<!--     如果本文件全是tablelayout，listitem的width不能到达最大 -->
+
+
+	<LinearLayout 
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:orientation="vertical">
+    
+
+<!--     <View  -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="1px"/> -->
+    
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:paddingLeft="@dimen/Margin16"
+        android:paddingRight="@dimen/Margin16" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Margin8"
+            android:layout_marginTop="@dimen/Margin8"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/MsgDetailContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/Margin"
+                android:text="阶段:" />
+
+            <TextView
+                android:id="@+id/task_stage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/itemContent" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Margin8" >
+
+            <TextView
+                style="@style/MsgDetailContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/Margin"
+                android:layout_gravity="center_vertical"
+                android:text="任务类型" />
+
+            <TextView
+                android:id="@+id/task_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/itemContent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="null" />
+            
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Margin8" >
+
+            <TextView
+                style="@style/MsgDetailContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/Margin"
+                android:layout_gravity="center_vertical"
+                android:text="详细" />
+
+            <TextView
+                android:id="@+id/task_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/itemContent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:maxLines="4"
+                android:text="null" />
+            
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Margin8"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/MsgDetailContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/Margin"
+                android:layout_gravity="center_vertical"
+                android:text="发起者" />
+
+            <TextView
+                android:id="@+id/task_owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c999999"
+                android:textSize="@dimen/itemContent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="null" />
+        </TableRow>
+    </TableLayout>
+    </LinearLayout>
+    
+    <Button 
+	    android:id="@+id/task_enable"
+	    android:layout_width="60dp"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_vertical"
+	    android:visibility="gone"
+	    android:text="激活"/>
+	
+	
+	
+</LinearLayout> 

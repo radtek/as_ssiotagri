@@ -1,0 +1,218 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/setting_itm_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@color/white">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/setting_icon_account_manage"
+            android:drawablePadding="5dp"
+            android:text="帐号信息"/>
+        
+        <TextView 
+            android:id="@+id/setting_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:text="用户的名称"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/setting_itm_addnode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:background="@color/white">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/setting_icon_common"
+            android:drawablePadding="5dp"
+            android:text="添加设备"/>
+        
+        <TextView 
+            android:id="@+id/setting_addnode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/setting_right_arrow"
+            android:layout_margin="5dp"
+            android:text="扫描设备二维码"/>
+    </RelativeLayout>
+    
+    
+    <RelativeLayout 
+        android:id="@+id/setting_itm_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@color/white">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/setting_icon_about_moji"
+            android:drawablePadding="5dp"
+            android:text="版本信息"/>
+        
+        <TextView 
+            android:id="@+id/app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:text="v0.0"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/checkupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/setting_icon_check_app_update"
+            android:drawablePadding="5dp"
+            android:text="版本更新"/>
+        
+        <TextView 
+            android:id="@+id/app_version_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/setting_right_arrow"
+            android:drawablePadding="5dp"
+            android:layout_margin="5dp"
+            android:text="检查版本"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/alarm_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@color/white">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/setting_icon_message"
+            android:drawablePadding="5dp"
+            android:layout_centerVertical="true"
+            android:text="预警通知(请在手机设置中允许后台运行)"/>
+        
+        <CheckBox 
+            android:id="@+id/alarm_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:checked="true"
+            android:button="@drawable/check_circle_selector"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/offline_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alarm_relativelayout"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/setting_icon_message"
+            android:drawablePadding="5dp"
+            android:layout_centerVertical="true"
+            android:text="离线通知功能(点击选择节点)" />
+
+        <CheckBox
+            android:id="@+id/offline_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:button="@drawable/check_circle_selector"
+            android:checked="false" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/sound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alarm_relativelayout"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/setting_icon_message"
+            android:drawablePadding="5dp"
+            android:layout_centerVertical="true"
+            android:text="通知声音" />
+
+        <CheckBox
+            android:id="@+id/sound_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:button="@drawable/check_circle_selector"
+            android:checked="false" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bk_white_select"
+        android:padding="10dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="退出登录/切换帐号"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/company_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="雨研(www.ssiot.com) 版权所有"
+        android:textSize="16sp"/>
+    
+</LinearLayout>

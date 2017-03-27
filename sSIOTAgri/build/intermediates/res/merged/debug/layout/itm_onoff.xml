@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1.0"
+    style="@style/setItemMiniBg"
+    android:orientation="horizontal" >
+
+    
+    <RadioGroup 
+        android:id="@+id/onoffgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton 
+            android:id="@+id/radio_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开"/>
+        <RadioButton 
+            android:id="@+id/radio_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭"/>
+        <RadioButton 
+            android:id="@+id/radio_keep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="维持"/>
+    </RadioGroup>
+    
+<!--     <Spinner  -->
+<!--         android:id="@+id/spinner_onoff" -->
+<!--         android:layout_width="50dp" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:tag=">" -->
+<!--         android:textColor="@color/otherSubTextColor" -->
+<!--         android:textSize="@dimen/subTextSize"/> -->
+<!--     <TextView -->
+<!--         android:id="@+id/spinner_onoff" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_marginLeft="@dimen/MarginMini" -->
+<!--         android:layout_marginRight="@dimen/MarginMini" -->
+<!--         android:drawableRight="@drawable/ic_spinner_arrow_select" -->
+<!--         android:tag=">" -->
+<!--         android:text="打开" -->
+<!--         android:textColor="@color/otherSubTextColor" -->
+<!--         android:textSize="@dimen/subTextSize" /> -->
+
+    <EditText
+        android:id="@+id/edit_seconds"
+        style="@style/setDetailEditText"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:ellipsize="none"
+        android:hint="秒数"
+        android:maxLines="1"
+        android:numeric="integer"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textViewVa1Unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="秒" />
+
+</LinearLayout>

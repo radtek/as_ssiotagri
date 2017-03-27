@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_fishnew"
+        layout="@layout/title_bar" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:stretchColumns="1" >
+        
+        <TableRow
+            style="@style/setItemBgClickBg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/subMenuHeight" >
+
+            <TextView
+                style="@style/ItemTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:background="@null"
+                android:text="提示:自助诊断界面可快捷记录疾病。TODO"
+                android:textColor="@color/red"
+                android:singleLine="true" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_productbatch"
+            style="@style/setItemBgClickBg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/subMenuHeight"
+            android:layout_marginTop="@dimen/Margin"
+            android:visibility="gone"
+            android:onClick="ClickFunc" >
+
+            <TextView
+                style="@style/ItemTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="批次:" />
+
+            <TextView
+                android:id="@+id/txt_productbatch"
+                style="@style/SetContentText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/Margin10"
+                android:drawableRight="@drawable/arrow_right_light"
+                android:gravity="right"
+                android:text="请选择" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_symptom"
+            style="@style/setItemBgClickBg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/subMenuHeight"
+            android:layout_marginTop="@dimen/Margin"
+            android:onClick="ClickFunc" >
+
+            <TextView
+                android:id="@+id/product_symptom"
+                style="@style/ItemTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="症状描述:" />
+
+            <EditText
+                android:id="@+id/edit_symptom"
+                style="@style/ItemTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:hint="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_disease"
+            style="@style/setItemBgClickBg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/subMenuHeight"
+            android:layout_marginTop="@dimen/Margin"
+            android:onClick="ClickFunc" >
+
+            <TextView
+                android:id="@+id/product_disease"
+                style="@style/ItemTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="诊断疾病:" />
+
+            <EditText
+                android:id="@+id/edit_disease"
+                style="@style/ItemTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:hint="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_resolve"
+            style="@style/setItemBgClickBg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/subMenuHeight"
+            android:layout_marginTop="@dimen/Margin"
+            android:onClick="ClickFunc" >
+
+            <TextView
+                android:id="@+id/product_resolve"
+                style="@style/ItemTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="解决方案:" />
+
+            <EditText
+                android:id="@+id/edit_resolve"
+                style="@style/ItemTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:hint="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_time"
+            style="@style/setItemBgClickBg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/subMenuHeight"
+            android:layout_marginTop="@dimen/Margin"
+            android:onClick="ClickFunc" >
+
+            <TextView
+                android:id="@+id/txt_time"
+                style="@style/ItemTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:background="@null"
+                android:text="记录时间:" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

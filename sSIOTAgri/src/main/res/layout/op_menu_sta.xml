@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tyre="http://schemas.android.com/apk/res/com.ssiot.agri"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+<!--     <ImageView -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="@dimen/divider" -->
+<!--         android:background="@drawable/divide_ccc" /> -->
+
+
+    <com.ssiot.remote.yun.unit.SeekBarPressure
+            android:id="@+id/seek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            tyre:duration="15"
+            tyre:maxValue="4"
+            tyre:minValue="0"
+            tyre:sheight="12sp"
+            tyre:swidth="300dip" >
+        </com.ssiot.remote.yun.unit.SeekBarPressure>
+    
+<!--     combo_enter_left_select -->
+    <LinearLayout
+        android:id="@+id/LinearLayoutDate"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="@drawable/btn_white_seletor2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/Margin"
+        android:layout_marginRight="@dimen/Margin"
+        android:paddingLeft="@dimen/Margin12"
+        android:paddingRight="@dimen/Margin8" >
+
+        <TextView
+            android:id="@+id/textViewTime"
+            style="@style/ItemContentText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:drawableRight="@drawable/ic_spinner_arrow_select"
+            android:text="开始结束时间设置"
+            android:textSize="@dimen/itemContent" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/Margin"
+        android:layout_marginRight="@dimen/Margin"
+        android:orientation="horizontal">
+        
+        <Spinner 
+            android:id="@+id/nodeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        
+        <Spinner 
+            android:id="@+id/senSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutLighScale"
+        android:layout_width="fill_parent"
+        android:layout_height="42.0dip"
+        android:layout_marginLeft="@dimen/Margin"
+        android:layout_marginRight="@dimen/Margin"
+        android:background="@drawable/bg_optionlist_bottom_select"
+        android:gravity="center_vertical"
+        android:onClick="LighScale"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutUpdate"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/ItemContentTextTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/Margin12"
+                android:layout_weight="1.0"
+                android:gravity="center|left"
+                android:text="达到光照强度:" />
+
+            <TextView
+                android:id="@+id/TextViewLighScale"
+                style="@style/ItemTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/mainMargin"
+                android:gravity="center"
+                android:text="1200" />
+
+            <TextView
+                style="@style/Text7714"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/mainMargin"
+                android:layout_marginRight="@dimen/mainMargin"
+                android:gravity="center"
+                android:text="lux" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/mainImgMargin"
+            android:src="@drawable/arrow_right_light" />
+    </LinearLayout>
+
+</LinearLayout>

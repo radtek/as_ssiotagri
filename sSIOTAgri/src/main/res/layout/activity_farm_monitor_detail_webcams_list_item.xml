@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6.0dip"
+        android:layout_marginRight="6.0dip"
+        android:background="@drawable/bg_card_normal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="56.0dip"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@android:id/icon"
+                android:layout_width="72.0dip"
+                android:layout_height="fill_parent"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_state_green" />
+
+            <TextView
+                android:id="@android:id/title"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="球机"
+                android:textColor="#ff222222"
+                android:textSize="16.0sp" />
+
+<!--             android:background="@android:color/transparent" -->
+<!--                 android:src="@drawable/ic_more_gray" -->
+            <Button
+                android:id="@+id/setting_cameras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_navitem_normal"
+                android:focusable="false"
+                android:visibility="invisible"
+                android:text="萤石云播放"
+                android:textColor="@color/white"
+                android:padding="4dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:background="@color/Gray"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@android:id/icon1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:contentDescription="@null"
+                android:padding="5.0dip"
+                android:scaleType="fitCenter"
+                android:src="@color/transparent" />
+
+            <ImageButton
+                android:id="@android:id/icon2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/transparent"
+                android:contentDescription="@null"
+                android:paddingBottom="29.0dip"
+                android:paddingTop="29.0dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_video_play" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

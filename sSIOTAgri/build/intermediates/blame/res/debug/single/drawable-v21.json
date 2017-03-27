@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/home/gejingbo/.android/build-cache/5e5ba618d3272f62f3657d47161e7ebdf430d13f/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/home/gejingbo/.android/build-cache/5e5ba618d3272f62f3657d47161e7ebdf430d13f/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/home/gejingbo/.android/build-cache/5e5ba618d3272f62f3657d47161e7ebdf430d13f/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/home/gejingbo/.android/build-cache/5e5ba618d3272f62f3657d47161e7ebdf430d13f/output/res/drawable-v21/abc_btn_colored_material.xml"
+    }
+]

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="xcl-charts">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/sSIOTAgri/libs/xcl-charts.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

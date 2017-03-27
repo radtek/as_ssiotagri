@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:background="@color/DarkGreen" >
+
+    <TextView
+        android:id="@+id/title_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="45.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="80.0dip"
+        android:layout_marginRight="80.0dip"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@color/master_white_color"
+        android:textSize="@dimen/textsize_h0" />
+
+    <TextView
+        android:id="@+id/title_bar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="45.0dip"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:paddingLeft="9.0dip"
+        android:text="返回"
+        android:textColor="@color/master_white_color"
+        android:textSize="@dimen/textsize_h1" />
+
+    <ImageView
+        android:id="@+id/title_bar_menu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:src="@drawable/icon_title_menu" />
+
+</RelativeLayout>

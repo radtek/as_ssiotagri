@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_f0f0f0"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_set" />
+
+    <ScrollView
+        style="@style/Scoller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/Margin"
+                android:layout_marginLeft="@dimen/Margin"
+                android:layout_marginRight="@dimen/Margin"
+                android:orientation="vertical" >
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/SetTitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/setMaginLeft"
+                        android:text="任务时间" />
+
+                    <include
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/op_time" />
+
+                    <TextView
+                        style="@style/SetTitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/setMaginLeft"
+                        android:text="预警条件" />
+
+                    <TableRow
+                        style="@style/setItemTopBg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/titleHeight" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/ItemTitleText"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="大小" />
+
+                            <TextView
+                                android:id="@+id/textViewCombo"
+                                style="@style/SetTitleTextColor"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="@dimen/setMagin"
+                                android:text="预警条件" />
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:id="@+id/radioGroupCombo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:orientation="horizontal" >
+
+                            <RadioButton
+                                android:id="@+id/radioSmall"
+                                style="@style/tab77White14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/combo_left_select"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="小于" />
+
+                            <RadioButton
+                                android:id="@+id/radioBig"
+                                style="@style/tab77White14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/combo_right_select"
+                                android:button="@null"
+                                android:checked="true"
+                                android:gravity="center"
+                                android:text="大于" />
+                        </RadioGroup>
+                    </TableRow>
+
+                    <TableRow
+                        style="@style/setItemBottomBg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/titleHeight" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/TextViewVal"
+                                style="@style/ItemTitleText"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="预警" />
+
+                            <TextView
+                                android:id="@+id/textViewValScale"
+                                style="@style/SetTitleTextColor"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="scale" />
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/textViewVa2"
+                            style="@style/setDetailEditText"
+                            android:layout_width="60.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/setMagin"
+                            android:hint=""
+                            android:maxWidth="150.0dip"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/textViewUnit"
+                            style="@style/SetContentText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="℃" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow
+                        style="@style/setItemBg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/Margin12" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/ItemTitleText"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/MarginMini"
+                                android:text="@string/state" />
+
+                            <TextView
+                                android:id="@+id/textViewComp"
+                                style="@style/SetTitleTextColor"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="@dimen/setMagin"
+                                android:text="已启用。当数据达到预警值时将发出预警" />
+                        </LinearLayout>
+
+                        <ToggleButton
+                            android:id="@+id/toggleButtonSet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/set_toggle"
+                            android:checked="true"
+                            android:focusable="false"
+                            android:textOff=""
+                            android:textOn="" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

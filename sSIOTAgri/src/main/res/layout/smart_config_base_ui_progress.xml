@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_ui_progress"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+<!--         <com.xiaomi.smarthome.library.common.widget.PieProgressBar -->
+        <com.ssiot.remote.yun.widget.PieProgressBar 
+        
+            android:id="@+id/base_ui_progress_bar"
+            android:layout_width="83.29999dip"
+            android:layout_height="83.29999dip"
+            android:background="@drawable/kuailian_progress_filled_not"
+            android:src="@drawable/kuailian_progress_filled" />
+
+        <TextView
+            android:id="@+id/base_ui_progress_bar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0%"
+            android:singleLine="true"
+            android:textColor="@color/class_text_24"
+            android:textSize="@dimen/font_size_0" />
+        
+        <ImageView 
+            android:id="@+id/fail_icon"
+            android:layout_width="83.29999dip"
+            android:layout_height="83.29999dip"
+            android:background="@drawable/kuailian_progress_filled"
+            android:src="@drawable/config_failed_disconnect"
+            android:visibility="invisible"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/base_ui_progress_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="26.769989dip"
+        android:text="设备注册"
+        android:singleLine="true"
+        android:textColor="@color/class_text_20"
+        android:textSize="15sp" />
+
+</LinearLayout>

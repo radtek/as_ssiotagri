@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="IPlaySDK">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/sSIOTAgri/libs/IPlaySDK.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

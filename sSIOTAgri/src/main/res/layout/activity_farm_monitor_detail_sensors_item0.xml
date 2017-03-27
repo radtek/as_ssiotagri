@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/node_image_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@color/DarkGreen"
+        android:layout_margin="2px">
+        <TextView 
+            android:id="@+id/single_node_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:text="节点名称"/>
+        <ImageView
+            android:id="@+id/single_node_chart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_chart"/>
+        <ImageView 
+            android:id="@+id/single_node_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:src="@drawable/online"
+            android:layout_toLeftOf="@id/single_node_chart"
+            android:layout_centerVertical="true"/>
+        <ImageView 
+            android:id="@+id/btn_diagnose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/single_node_status"
+            android:paddingRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/water_diagnose"
+            android:visibility="gone"/>
+        <TextView 
+            android:id="@+id/single_node_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btn_diagnose"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:text="时间"/>
+    </RelativeLayout>
+    
+<!--     全部显示的listview -->
+    <com.ssiot.remote.yun.unit.AllListView 
+        android:id="@+id/single_node_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2px"
+        />
+    
+</LinearLayout>

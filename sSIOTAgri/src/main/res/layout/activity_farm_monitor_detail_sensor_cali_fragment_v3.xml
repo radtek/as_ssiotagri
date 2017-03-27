@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:id="@+id/quick_cali_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            style="@style/TitleText"
+            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:text="快捷标定"/>
+        <Button 
+            android:id="@+id/oxgen_cali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_optionlist_select"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            style="@style/ItemContentText"
+            android:text="空气满氧一点标定"/>
+        
+        <LinearLayout 
+            android:id="@+id/ph_cali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <Button 
+                android:id="@+id/ph4_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_optionlist_select"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                style="@style/ItemContentText"
+                android:text="PH=4标定"/>
+            <Button 
+                android:id="@+id/ph7_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_optionlist_select"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                style="@style/ItemContentText"
+                android:text="PH=7标定"/>
+            <Button 
+                android:id="@+id/ph9_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_optionlist_select"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                style="@style/ItemContentText"
+                android:text="PH=9标定"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/normal_cali_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/point_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" 添加校准点" />
+
+        <Button
+            android:id="@+id/cali_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="保存" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/point_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+    
+
+</LinearLayout>

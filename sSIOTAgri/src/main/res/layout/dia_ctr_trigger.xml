@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    
+    <TableLayout
+        android:id="@+id/tablelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <TableRow
+            android:id="@+id/pikctrnode"
+            style="@style/setItemBgClickBg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/titleHeight"
+            android:onClick="ClickFunc" >
+
+            <TextView
+                style="@style/ItemTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:singleLine="true"
+                android:text="先选取触发源节点" />
+
+            <TextView
+                android:id="@+id/txt_nodes"
+                style="@style/SetContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/Margin10"
+                android:drawableRight="@drawable/arrow_right_light"
+                android:text="点击选取" />
+        </TableRow>
+    </TableLayout>
+
+	<TableLayout
+        android:id="@+id/tablelayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tablelayout"
+        android:layout_margin="10dp" >
+
+        <TableRow
+            android:id="@+id/row_interval"
+            style="@style/setItemTopClickBg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/titleHeight"
+            android:onClick="ShowIntervalPickDia" >
+
+            <TextView
+                style="@style/ItemTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="间隔时间" />
+
+            <TextView
+                android:id="@+id/txt_interval"
+                style="@style/SetContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/Margin10"
+                android:drawableRight="@drawable/arrow_right_light"
+                android:text="点击选取" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/row_work"
+            style="@style/setItemMidlleBg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/titleHeight"
+            android:onClick="ShowWorkTimePickDia" >
+
+            <TextView
+                style="@style/ItemTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="运行时间" />
+
+            <TextView
+                android:id="@+id/txt_work"
+                style="@style/SetContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/Margin10"
+                android:drawableRight="@drawable/arrow_right_light"
+                android:text="点击选取" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/row_relation"
+            style="@style/setItemBottomClickBg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/titleHeight"
+            android:onClick="ShowRelationPickDia" >
+
+            <TextView
+                style="@style/ItemTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="关系选择" />
+
+            <TextView
+                android:id="@+id/txt_relation"
+                style="@style/SetContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/Margin10"
+                android:drawableRight="@drawable/arrow_right_light"
+                android:text="点击选取" />
+        </TableRow>
+    </TableLayout>
+<!-- ///////////////// -->
+    <RelativeLayout
+        android:id="@+id/part2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tablelayout2"
+        android:layout_margin="10dp"
+        android:visibility="visible" >
+        
+        <include
+            android:id="@+id/tri_rule_title"
+            layout="@layout/tri_addrule_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        
+        <ListView 
+            android:id="@+id/tri_element_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tri_rule_title"/>
+        
+        <Button
+            android:id="@+id/tri_finish" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tri_element_list"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="完成"/>
+    </RelativeLayout>
+
+</RelativeLayout>

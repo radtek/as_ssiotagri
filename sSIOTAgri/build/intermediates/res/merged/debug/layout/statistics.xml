@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+<!--     <include -->
+<!--         android:id="@+id/includeFoot" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         layout="@layout/title_warn" /> -->
+
+    <RadioGroup
+        android:id="@+id/RadioGroupSta"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/titleHeight"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/RadioButtonDevice"
+            style="@style/tab7714"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/s_menu_select"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="设备报表" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonExe"
+            style="@style/tab7714"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/s_menu_select"
+            android:button="@null"
+            android:drawableLeft="@drawable/divide_v_ccc_2px"
+            android:gravity="center"
+            android:text="执行力报表" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_composite_chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_radius10"
+        android:layout_marginTop="10dp"
+        android:text="复合图表"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/PagerSta"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:visibility="visible" />
+
+<!--     <include -->
+<!--         android:id="@android:id/empty" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="fill_parent" -->
+<!--         layout="@layout/need_join_org" -->
+<!--         android:visibility="visible" /> -->
+
+</LinearLayout>

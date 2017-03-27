@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <Spinner 
+        android:id="@+id/pop_sensor_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"/>
+    
+    <LinearLayout
+        android:id="@+id/edit_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pop_sensor_spinner"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/value_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:numeric="decimal" />
+
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/pop_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:text="添加"/>
+    <Button 
+        android:id="@+id/pop_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_bar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="取消"/>
+    
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/sSIOTAgri/src/main/java/com/company/NetSDK/ALARM_FILE_SYSTEM_INFO.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sSIOTAgri/src/main/java/com/company/NetSDK/ALARM_IP_COLLISION_CFG.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sSIOTAgri/src/main/java/com/company/NetSDK/AV_CFG_VideoWidgetSensorInfo_Description.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sSIOTAgri/src/main/java/com/company/NetSDK/CFG_DSPENCODECAP_INFO.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sSIOTAgri/src/main/java/com/company/NetSDK/CFG_NAS_INFO_EX.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sSIOTAgri/src/main/java/com/company/NetSDK/CFG_STORAGELOWSAPCE_INFO.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sSIOTAgri/src/main/java/com/company/NetSDK/EM_USEDEV_MODE.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sSIOTAgri/src/main/java/com/company/NetSDK/NET_CTRL_VTP_DISCONNECT.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sSIOTAgri/src/main/java/com/company/NetSDK/NET_IN_DELETECFG.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sSIOTAgri/src/main/java/com/company/NetSDK/SDKCTRL_CONNECT_WIFI_BYWPS_OUT.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sSIOTAgri/src/main/java/com/company/NetSDK/SDKDEV_IPIFILTER_CFG_EX.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sSIOTAgri/src/main/java/com/company/NetSDK/SDKDEV_MACHINE_CFG.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sSIOTAgri/src/main/java/com/company/NetSDK/SDKDEV_MAIL_CFG.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sSIOTAgri/src/main/java/com/company/NetSDK/SDKDEV_MMS_CFG.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sSIOTAgri/src/main/java/com/company/NetSDK/SDKDEV_USER_NET_INFO.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sSIOTAgri/src/main/java/com/company/NetSDK/SDK_DISK_SUBAREA_EN.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sSIOTAgri/src/main/java/com/company/NetSDK/SDK_IN_WM_GET_COLLECTIONS.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sSIOTAgri/src/main/java/com/company/NetSDK/SDK_MONITORWALL_COLLECTION.java" charset="UTF-8" />
+  </component>
+</project>

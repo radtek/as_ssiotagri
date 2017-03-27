@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size android:height="@dimen/ic_size_staicon" android:width="@dimen/ic_size_staicon" />
+            <stroke android:width="@dimen/ic_stroke_width" android:color="@color/DarkGreen" />
+<!--             @color/device_report_normal -->
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+    <item android:left="@dimen/ic_ring_thickness" android:top="@dimen/ic_ring_thickness" android:right="@dimen/ic_ring_thickness" android:bottom="@dimen/ic_ring_thickness">
+        <shape android:shape="oval">
+            <solid android:color="@color/DarkGreen" />
+        </shape>
+    </item>
+</layer-list>

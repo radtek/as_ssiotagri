@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+    
+    <TextView
+        android:id="@+id/disease_name" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"/>
+    
+    <TextView
+        android:id="@+id/disease_detail" 
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="查看"/>
+    
+    <TextView
+        android:id="@+id/disease_pro" 
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/disease_detail"
+        android:singleLine="true"
+        android:text="概率0%"/>
+</RelativeLayout>

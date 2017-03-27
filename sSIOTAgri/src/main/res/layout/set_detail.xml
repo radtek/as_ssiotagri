@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_f0f0f0"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_set" />
+
+    <ScrollView
+        style="@style/Scoller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="@dimen/Margin"
+        android:paddingRight="@dimen/Margin" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSet"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                style="@style/setItemBg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/Margin12" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/ItemTitleText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:text="模式" />
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroupSet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/setMagin"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/RadioButtonInt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:button="@null"
+                            android:checked="true"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:text="智能控制"
+                            android:textSize="@dimen/itemContent" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButtonTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:button="@null"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:text="定时控制"
+                            android:textSize="@dimen/itemContent" />
+                    </RadioGroup>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

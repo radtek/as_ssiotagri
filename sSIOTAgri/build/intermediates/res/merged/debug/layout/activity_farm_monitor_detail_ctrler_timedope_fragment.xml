@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ssiot="http://schemas.android.com/apk/res/com.ssiot.agri"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/DarkGreen"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/PromptText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15.0dip"
+        android:text="滑动设置运行时间"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/da" />
+
+    <LinearLayout
+        android:id="@+id/timeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-30dp"
+        android:layout_marginBottom="-30dp"
+        android:layout_gravity="center" >
+
+<!--         android:layout_height="64.0dip" -->
+        <com.ssiot.remote.yun.unit.MyNumberPicker
+            android:id="@+id/pick1"
+            android:layout_width="90.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            ssiot:mytextcolor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingTop="10.0dip"
+            android:text="时"
+            android:textColor="@color/da" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="0.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text=":"
+            android:textColor="@color/da"
+            android:textSize="50.0sp" />
+
+        <com.ssiot.remote.yun.unit.MyNumberPicker
+            android:id="@+id/pick2"
+            android:layout_width="90.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            ssiot:mytextcolor="@color/white"
+            android:textColor="@color/device_time_picker_text_color"
+            android:textSize="50.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingTop="10.0dip"
+            android:text="分"
+            android:textColor="@color/da" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15.0dip"
+        android:padding="25.0dip" >
+
+        <Button
+            android:id="@android:id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/shape_transbg_whiteborder_rect_sel"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="开"
+            android:textColor="@color/txt_white_seletor" />
+
+        <Button
+            android:id="@android:id/button2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="11.0dip"
+            android:layout_marginRight="11.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/shape_transbg_whiteborder_rect_sel"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="关"
+            android:textColor="@color/txt_white_seletor" />
+
+        <Button
+            android:id="@android:id/button3"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/shape_transbg_whiteborder_rect_sel"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="停"
+            android:textColor="@color/txt_white_seletor"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ssiot.remote.MainActivity" >
+    
+
+    <RelativeLayout 
+        android:id="@+id/his_control_part"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="#fff0f0f0"
+        >
+        <Button 
+            android:id="@+id/startsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/search"
+            android:textColor="@color/ssiotgreen"
+            android:background="@drawable/search_bk_selector"/>
+        <ImageButton 
+            android:id="@+id/startcamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/startsearch"
+            android:layout_alignTop="@id/startsearch"
+            android:layout_alignBottom="@id/startsearch"
+            android:src="@drawable/start_camera"
+            android:background="@drawable/search_bk_selector"/>
+        <EditText 
+            android:id="@+id/qrcode_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/startcamera"
+            android:layout_alignTop="@id/startcamera"
+            android:layout_alignBottom="@id/startcamera"
+            android:background="@drawable/search_bk"
+            android:hint="输入或扫描二维码"
+            android:singleLine="true"
+            />
+    </RelativeLayout>
+    
+	<LinearLayout
+	    android:id="@+id/indicator_linear"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/his_control_part"
+	    android:background="@color/ssiotgreen"
+	    android:orientation="vertical" >
+	
+	    <RadioGroup
+	        android:id="@+id/tabs"
+	        android:layout_width="fill_parent"
+	        android:layout_height="46.0dip"
+	        android:orientation="horizontal" >
+	
+	        <RadioButton
+	            android:id="@+id/radio0"
+	            style="@style/tcagri_farm_detail_tab_style"
+	            android:layout_width="0.0dip"
+	            android:layout_height="match_parent"
+	            android:checked="true"
+	            android:text="我的产品列表" />
+	
+	        <RadioButton
+	            android:id="@+id/radio1"
+	            style="@style/tcagri_farm_detail_tab_style"
+	            android:layout_width="0.0dip"
+	            android:layout_height="match_parent"
+	            android:text="历史查询列表" />
+	    </RadioGroup>
+	
+	    <View
+	        android:id="@+id/indicator"
+	        android:layout_width="150.0dip"
+	        android:layout_height="2.0dip"
+	        android:background="#ffff8c69" />
+	</LinearLayout>
+    
+    <android.support.v4.view.ViewPager  
+        android:id="@+id/pager"
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"
+        android:layout_below="@id/indicator_linear"
+        android:background="#ffffffff"
+         /> 
+    
+    <RelativeLayout
+        android:id="@+id/his_his_part"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/his_control_part"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:background="#ffffffff" >
+
+        <TextView
+            android:id="@+id/his_his_t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/his_list_title"
+            android:background="@drawable/his_title_bk"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/search_his_list_title" />
+        
+        <include 
+            android:id="@+id/his_his_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/his_his_t1"
+            layout="@layout/his_list_item"/>
+        
+        <ListView
+            android:id="@+id/his_his_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/his_his_title" />
+    </RelativeLayout>
+
+</RelativeLayout>

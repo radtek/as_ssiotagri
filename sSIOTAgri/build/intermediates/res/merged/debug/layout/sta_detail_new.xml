@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_f0f0f0"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/includeFoot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_bar" />
+
+    <include
+        android:id="@+id/opMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/op_menu_sta" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/MarginSmall"
+            android:layout_marginRight="@dimen/MarginSmall"
+            android:layout_marginTop="@dimen/Margin10"
+            android:orientation="vertical"
+            android:padding="@dimen/MarginMini" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutAchart"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="60.0dip" >
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayoutVal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:visibility="invisible" >
+
+                        <TextView
+                            android:id="@+id/textViewVal"
+                            style="@style/ItemTitleText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2.0dip"
+                            android:text="textViewVal字符串"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:layout_width="@dimen/divider"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="@dimen/MarginMini"
+                            android:layout_marginRight="@dimen/MarginMini"
+                            android:background="@drawable/divide_v_ccc" />
+
+                        <TextView
+                            android:id="@+id/textViewValTime"
+                            style="@style/StaValText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="time" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayoutUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textViewUnitTitle"
+                            style="@style/StaValText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3.0dip"
+                            android:text="单位" />
+
+                        <TextView
+                            android:id="@+id/textViewUnit"
+                            style="@style/StaValText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="摄氏度" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/graphLinearLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:clickable="true"
+                    android:orientation="vertical" />
+                
+                <LinearLayout
+                    android:id="@+id/LinearLayoutRadar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <com.ssiot.remote.yun.unit.achar.RadarGraph
+                        android:id="@+id/RadarGraph"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+<!--     <TextView -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="@dimen/divider" -->
+<!--         android:background="@drawable/divide_v_ccc" /> -->
+
+<!--     <LinearLayout -->
+<!--         android:id="@+id/LinearLayoutDivid" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:background="@color/white" -->
+<!--         android:gravity="center_vertical" -->
+<!--         android:orientation="horizontal" -->
+<!--         android:padding="@dimen/MarginMini" -->
+<!--         android:visibility="visible" /> -->
+
+</LinearLayout>

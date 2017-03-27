@@ -1,0 +1,388 @@
+package com.ssiot.remote;
+
+import android.app.ActivityManager;
+import android.app.ActivityManager.RunningAppProcessInfo;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.Bitmap.Config;
+import android.graphics.drawable.BitmapDrawable;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.preference.PreferenceManager;
+import android.text.TextUtils;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import com.ssiot.agri.R;
+
+public class Utils {
+    private static final String tag = "Utils";
+    public static final String PREF_USERID = "userid";
+    public static final String PREF_USERNAME = "username";
+    public static final String PREF_PWD = "password";
+    public static final String PREF_USERKEY = "userkey";
+    public static final String PREF_USERNAMETEXT = "usernametext";
+    public static final String PREF_AREAID = "areaid";
+    public static final String PREF_ADDR = "address";
+    public static final String PREF_AVATAR = "avatar";
+    public static final String PREF_PARENTID = "parentid";//ParentId
+    public static final String PREF_GROUPID = "groupid";
+    public static final String PREF_USERTYPE = "usertype";
+    public static final String PREF_USERDEVICETYPE = "userdevicetype";
+    public static final String PREF_MAIN_USERID = "mainuserid";
+    
+    public static final String PREF_AUTOUPDATE = "autoupdate";
+    public static final String PREF_ALARM = "alarm";
+    public static final String PREF_OFFLINE_NOTICE = "offlinenotice";
+    public static final String PREF_NOTI_SOUND = "notisound";
+    public static final String PREF_LAST_OFFLINE = "lastofflinenodes";
+    
+    public static final String PREF_WEATHER_DETAIL = "weatherdetail";
+    public static final String PREF_WEATHER_TIME = "getweathertime";//上一次获取天气的时间，目的是尽量减少查询次数
+    public static final String PREF_WEATHER_TIME_HOUR = "getweathertime2";//上一次获取Hour天气的时间，目的是尽量减少查询次数
+    public static final String PREF_WEATHER_DETAIL_HOUR = "weatherdetail2";
+
+    public static final String BUN_DEVICE_NAMES = "devicenames";
+    public static final String BUN_DEVICE_NOS = "devicenos";
+    
+    public static int offlineSeconds = 3600;//默认一小时离线判断，贵州茶叶25小时
+    
+    public static void setStringToFile(String str){
+        try {
+            File f = new File("/sdcard/sqlcmd.txt");
+            FileOutputStream fo = new FileOutputStream(f);
+            byte[] bytes = str.getBytes();
+            fo.write(bytes);
+            fo.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    
+    public static Timestamp getMyTimestamp(String str){//系统的都不支持模糊的parse
+        str = str.trim();
+        if (null != str){
+            int i = str.indexOf("-");
+            String year = str.substring(0, i);
+            String tmp = str.substring(i + 1, str.length());
+            int j = tmp.indexOf("-");
+            String month = tmp.substring(0, j);
+            tmp = tmp.substring(j + 1, tmp.length());
+            int k = tmp.indexOf(" ");
+            String day = tmp.substring(0, k);
+            tmp = tmp.substring(k + 1, tmp.length());
+            int maohao = tmp.indexOf(":");
+            String hour = tmp.substring(0, maohao);
+            tmp = tmp.substring(maohao + 1, tmp.length());
+            int maohao2 = tmp.indexOf(":");
+            String minite = "";
+            if (maohao2 < 0){
+                maohao2 = tmp.length();
+            }
+            minite = tmp.substring(0, maohao2);
+            if (TextUtils.isEmpty(minite)){
+                minite = "0";
+            }
+            String second = "";
+            if (maohao2 < tmp.length()){
+                tmp = tmp.substring(maohao2 + 1, tmp.length());
+                int kongge2 = tmp.indexOf(" ");
+                if (kongge2 > 0){
+                    second =  tmp.substring(0, kongge2);
+                }
+            }
+            if (TextUtils.isEmpty(second)){
+                second = "0";
+            }
+//            tmp = tmp.substring(maohao2 + 1, tmp.length());
+            Log.v(tag, "----getMyTimestamp----" + year + month + day + hour );
+            return new Timestamp(Integer.parseInt(year) - 1900, Integer.parseInt(month) - 1, Integer.parseInt(day), Integer.parseInt(hour), 
+                    Integer.parseInt(minite), Integer.parseInt(second), 0);
+        }
+        return new Timestamp(0);
+    }
+    
+    public static int dip2px(Context context, float dpValue) {   
+        final float scale = context.getResources().getDisplayMetrics().density;  
+        return (int) (dpValue * scale + 0.5f);  
+    }
+    
+    public static String getStringForVals(ArrayList<Integer> paramArrayList) {
+        String str = "";
+        Iterator iterator;
+        if (paramArrayList.size() > 0) {
+            iterator = paramArrayList.iterator();
+            while (iterator.hasNext()) {
+                int i = ((Integer) iterator.next()).intValue();
+                str = str + i + ",";
+            }
+            str = str.substring(0, -1 + str.length());
+        }
+        return str;
+    }
+    
+    public static String buildTime(long seconds){//当前时间向前向后加减多少秒
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date d = new Date(System.currentTimeMillis() + seconds * 1000);
+        return formatter.format(d);
+    }
+    
+    public static String formatTime(Timestamp ts){
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+        if (null == ts){
+        	return "未知时间";
+        }
+        Date d = new Date(ts.getTime());
+        return formatter.format(d);
+    }
+    
+    public static Dialog createLoadingDialog(Context context, String msg) {  
+        LayoutInflater inflater = LayoutInflater.from(context);  
+        View v = inflater.inflate(R.layout.dialog_loading, null);// 得到加载view  
+        LinearLayout layout = (LinearLayout) v.findViewById(R.id.dialog_view);// 加载布局  
+        // main.xml中的ImageView  
+        ImageView spaceshipImage = (ImageView) v.findViewById(R.id.img);  
+        TextView tipTextView = (TextView) v.findViewById(R.id.tipTextView);// 提示文字  
+        // 加载动画  
+        Animation hyperspaceJumpAnimation = AnimationUtils.loadAnimation(  
+                context, R.anim.loading_animation);  
+        // 使用ImageView显示动画  
+        spaceshipImage.startAnimation(hyperspaceJumpAnimation);  
+        tipTextView.setText(msg);// 设置加载信息  
+  
+        Dialog loadingDialog = new Dialog(context, R.style.loading_dialog);// 创建自定义样式dialog  
+  
+        loadingDialog.setCancelable(false);// 不可以用“返回键”取消  
+        loadingDialog.setContentView(layout, new LinearLayout.LayoutParams(  
+                LinearLayout.LayoutParams.MATCH_PARENT,  
+                LinearLayout.LayoutParams.MATCH_PARENT));// 设置布局  
+        return loadingDialog;
+    }
+    
+    public static boolean isNetworkConnected(Context context) {
+        if (context != null) {
+            ConnectivityManager mConnectivityManager = (ConnectivityManager) context
+                    .getSystemService(Context.CONNECTIVITY_SERVICE);
+            NetworkInfo mNetworkInfo = mConnectivityManager.getActiveNetworkInfo();
+            if (mNetworkInfo != null) {
+                return mNetworkInfo.isAvailable();
+            }
+        }
+        return false;
+    }
+    
+    public static String getStrPref(String key, Context context){
+        SharedPreferences mPref = PreferenceManager.getDefaultSharedPreferences(context);
+        return mPref.getString(key, "");
+    }
+    
+    public static int getIntPref(String key, Context context){
+        SharedPreferences mPref = PreferenceManager.getDefaultSharedPreferences(context);
+        return mPref.getInt(key, -1);
+    }
+    
+    public static boolean getBooleabPref(String key, Context context){
+        SharedPreferences mPref = PreferenceManager.getDefaultSharedPreferences(context);
+        boolean defal = false;
+        if (PREF_ALARM.equals(key)){
+            defal = true;
+        }
+        return mPref.getBoolean(key, defal);
+    }
+    
+    public static void changePicture(Context c){
+        BitmapDrawable b = (BitmapDrawable) c.getResources().getDrawable(R.drawable.ic_launcher);
+        Bitmap img = b.getBitmap();
+        int width = img.getWidth();         //获取位图的宽    
+        int height = img.getHeight();       //获取位图的高    
+            
+        int []pixels = new int[width * height]; //通过位图的大小创建像素点数组    
+            
+        img.getPixels(pixels, 0, width, 0, 0, width, height);    
+        int alpha = 0xFF << 24;     
+        for(int i = 0; i < height; i++)  {
+            for(int j = 0; j < width; j++) {    
+                int grey = pixels[width * i + j];    
+                    
+                int red = ((grey  & 0x00FF0000 ) >> 16);    
+                int green = ((grey & 0x0000FF00) >> 8);
+                int blue = (grey & 0x000000FF);    
+                    
+//                grey = (int)((float) red * 0.3 + (float)green * 0.59 + (float)blue * 0.11);    
+//                grey = alpha | (grey << 16) | (grey << 8) | grey;  
+//                grey = alpha | (grey & 0x0000FF00);
+                grey = (grey & 0xff00FF00);
+                grey = ((grey << 17) -1) & grey;
+                if ((grey & 0x0000ff00) < 0x00001100 ){
+                    grey = (0x00 <<24) & grey;
+                    grey = 0x00ffffff;
+                }
+                
+                //--------------------------------
+                int a = ((grey  & 0xff000000 ) >> 24);
+                grey = (a<<24) | 0x69c911;
+                //--------------------------------
+                pixels[width * i + j] = grey;
+            }    
+        }    
+        Bitmap result = Bitmap.createBitmap(width, height, Config.ARGB_8888);
+        result.setPixels(pixels, 0, width, 0, 0, width, height);
+        
+        File f = new File("/sdcard/mmm3.png");
+        try {
+            FileOutputStream out = new FileOutputStream(f);
+            result.compress(Bitmap.CompressFormat.PNG, 90, out);
+            out.flush();
+            out.close();
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+    
+    public static void changePic2(Context c, int resID){
+//        BitmapDrawable b = (BitmapDrawable) c.getResources().getDrawableForDensity(resID,240);
+        BitmapDrawable b = (BitmapDrawable) c.getResources().getDrawable(resID);
+        Bitmap img = b.getBitmap();
+        int width = img.getWidth();         //获取位图的宽    
+        int height = img.getHeight();       //获取位图的高    
+        Log.v("Utils", "--------changePic2-------" + width + " h:"+ height);
+        int []pixels = new int[width * height]; //通过位图的大小创建像素点数组    
+            
+        img.getPixels(pixels, 0, width, 0, 0, width, height);    
+        int alpha = 0xFF << 24;     
+        for(int i = 0; i < height; i++)  {
+            for(int j = 0; j < width; j++) {    
+                int grey = pixels[width * i + j];    
+                    
+                int red = ((grey  & 0x00FF0000 ) >> 16);    
+                int green = ((grey & 0x0000FF00) >> 8);
+                int blue = (grey & 0x000000FF);    
+                    
+//                grey = (int)((float) red * 0.3 + (float)green * 0.59 + (float)blue * 0.11);    
+//                grey = alpha | (grey << 16) | (grey << 8) | grey;  
+//                grey = alpha | (grey & 0x0000FF00);
+//                int a = ((grey  & 0xff000000 ) >> 24);  
+                
+//                grey = a | (150 << 16 )| (150 <<8) | 150;
+//                grey = (a<<24) | 0xffffff;
+                int alp = ((grey  & 0xFF000000 ) >> 24);
+                if (alp != 0){
+                	grey = alp | 255 << 16 | 255 << 8 | 255;
+                }
+                pixels[width * i + j] = grey;
+            }    
+        }    
+        Bitmap result = Bitmap.createBitmap(width, height, Config.ARGB_8888);
+        result.setPixels(pixels, 0, width, 0, 0, width, height);
+        
+        File f = new File("/sdcard/mmm"+resID+".png");
+        try {
+            FileOutputStream out = new FileOutputStream(f);
+            result.compress(Bitmap.CompressFormat.PNG, 90, out);
+            out.flush();
+            out.close();
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+    
+    
+    public static HashMap<String, String> parseXml(InputStream inStream) throws Exception {   
+        HashMap<String, String> hashMap = new HashMap<String, String>();
+    
+        // 实例化一个文档构建器工厂
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        // 通过文档构建器工厂获取一个文档构建器
+        DocumentBuilder builder = factory.newDocumentBuilder();
+        // 通过文档通过文档构建器构建一个文档实例
+        Document document = builder.parse(inStream);
+        //获取XML文件根节点
+        Element root = document.getDocumentElement();
+        //获得所有子节点
+        NodeList childNodes = root.getChildNodes();
+        for (int j = 0; j < childNodes.getLength(); j++) {
+            //遍历子节点
+            Node childNode = (Node) childNodes.item(j);
+            if (childNode.getNodeType() == Node.ELEMENT_NODE) {
+                Element childElement = (Element) childNode;
+            //版本号
+                if ("version".equals(childElement.getNodeName())) {
+                    hashMap.put("version",childElement.getFirstChild().getNodeValue());
+                } else if (("name".equals(childElement.getNodeName()))) {//软件名称
+                    hashMap.put("name",childElement.getFirstChild().getNodeValue());
+                } else if (("url".equals(childElement.getNodeName()))){//下载地址
+                    hashMap.put("url",childElement.getFirstChild().getNodeValue());
+                } else if(UpdateDialogActivity.TAG_VERSIONINFO.equals(childElement.getNodeName())){
+                    hashMap.put(UpdateDialogActivity.TAG_VERSIONINFO,childElement.getFirstChild().getNodeValue());
+                }
+            }
+        }
+        return hashMap;
+    }
+    
+    public static ArrayList<String> parseJSON_MultiTiming(String str){//定时的
+        ArrayList<String> ret = new ArrayList<String>();
+        try {
+            JSONArray localJSONArray = new JSONArray(str);
+            for (int i = 0; i < localJSONArray.length(); i++) {
+                JSONObject groupJSONObject = localJSONArray.optJSONObject(i);
+                ret.add(groupJSONObject.toString());
+//                String id = groupJSONObject.getString("ID");
+//                String startTime = groupJSONObject.getString("StartTime");
+//                String endTime = groupJSONObject.getString("EndTime");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return ret;
+    }
+    
+    public static boolean isBackground(Context context) {
+        ActivityManager activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        List<RunningAppProcessInfo> appProcesses = activityManager.getRunningAppProcesses();
+        for (RunningAppProcessInfo appProcess : appProcesses) {
+             if (appProcess.processName.equals(context.getPackageName())) {
+                    if (appProcess.importance == RunningAppProcessInfo.IMPORTANCE_FOREGROUND ||
+                            appProcess.importance == RunningAppProcessInfo.IMPORTANCE_VISIBLE) {
+                              Log.i("前台", appProcess.processName + " "+  appProcess.importance);
+                              return false;
+                    }else{
+                        Log.i("后台", appProcess.processName + appProcess.importance);
+                        return true;
+                    }
+               }
+        }
+        return false;
+    }
+    
+}

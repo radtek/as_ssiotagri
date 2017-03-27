@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300.0dip"
+    android:layout_height="fill_parent"
+    android:background="@drawable/btn_white_normal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/subMenuHeight"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/Margin12"
+        android:paddingRight="@dimen/Margin12"
+        android:text="TextView"
+        android:textColor="@color/DarkGreen"
+        android:textSize="16.0dip" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider2"
+        android:layout_marginBottom="@dimen/MarginMini"
+        android:layout_marginTop="@dimen/MarginMini"
+        android:background="@drawable/divide_green" />
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:paddingBottom="@dimen/Margin"
+        android:paddingLeft="@dimen/Margin12"
+        android:paddingRight="@dimen/Margin12"
+        android:text="TextView"
+        android:textColor="@color/c999999" />
+
+    <EditText
+        android:id="@+id/editTextContent"
+        style="@style/my_edittext_style"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/login_height"
+        android:layout_marginLeft="@dimen/Margin12"
+        android:layout_marginRight="@dimen/Margin12"
+        android:textColorHint="#ff999999"
+        android:textSize="16.0dip" >
+
+        <requestFocus />
+    </EditText>
+
+    <ListView
+        android:id="@+id/listViewItem"
+        style="@style/listResNoAniStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <GridView
+        android:id="@+id/gridViewCheckItem"
+        style="@style/listResNoAniStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/TextViewDividerH"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider"
+        android:layout_marginTop="@dimen/MarginMini"
+        android:background="@drawable/divide_ccc" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutButton"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/login_height" >
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/tra_selector"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/c999999"
+            android:textSize="@dimen/Margin16" />
+
+        <TextView
+            android:id="@+id/TextViewDivider"
+            android:layout_width="@dimen/divider"
+            android:layout_height="fill_parent"
+            android:background="@drawable/divide_v_ccc" />
+
+        <Button
+            android:id="@+id/buttonSure"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/tra_selector"
+            android:gravity="center"
+            android:text="@string/sure"
+            android:textColor="@color/c333333"
+            android:textSize="@dimen/Margin16" />
+    </LinearLayout>
+
+</LinearLayout>

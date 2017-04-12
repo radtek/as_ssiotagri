@@ -634,7 +634,7 @@ public class WS_API extends WebBasedb2{
 				String valueTmp = jo.getString("v");
 				//TODO
 
-				String value = getFormatedAccurancy(valueTmp, accurancy);
+				String value = DeviceBean.getFormatedAccurancy(valueTmp, accurancy);
 
 				datas.add(new XYStringHolder(time, value));
 			}
@@ -644,20 +644,7 @@ public class WS_API extends WebBasedb2{
 		return datas;
 	}
 
-	private static String getFormatedAccurancy(String dataStr, int accurancy){
-		if (accurancy >= 0){
-			int dotIndex = dataStr.indexOf(".");
-			if (dotIndex >= 0){
-				try {
-					return dataStr.substring(0,dotIndex + accurancy);
-				} catch (Exception e){
 
-				}
-
-			}
-		}
-		return dataStr;
-	}
 	
 	//3代产品根据 facility 进行sort
 	private static class YNodeComparator implements Comparator<YunNodeModel> {

@@ -32,12 +32,12 @@
         "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/layout/monitor_node_view.xml"
     },
     {
-        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/layout/activity_farm_monitor_detail_ctr_item.xml",
-        "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/layout/activity_farm_monitor_detail_ctr_item.xml"
-    },
-    {
         "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/layout/act_manualdata_edit.xml",
         "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/layout/act_manualdata_edit.xml"
+    },
+    {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/layout/activity_farm_monitor_detail_ctr_item.xml",
+        "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/layout/activity_farm_monitor_detail_ctr_item.xml"
     },
     {
         "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/layout/open_ysservice_dialog.xml",
@@ -76,12 +76,12 @@
         "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/layout/notification_download.xml"
     },
     {
-        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/layout/activity_farm_monitor_detail_ctrler_logs_list_header_item.xml",
-        "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/layout/activity_farm_monitor_detail_ctrler_logs_list_header_item.xml"
-    },
-    {
         "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/layout/act_land_edit.xml",
         "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/layout/act_land_edit.xml"
+    },
+    {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/layout/activity_farm_monitor_detail_ctrler_logs_list_header_item.xml",
+        "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/layout/activity_farm_monitor_detail_ctrler_logs_list_header_item.xml"
     },
     {
         "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/layout/activity_main.xml",
@@ -92,24 +92,24 @@
         "source": "/home/gejingbo/.android/build-cache/5e5ba618d3272f62f3657d47161e7ebdf430d13f/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/layout/realplay_talkback_wnd.xml",
-        "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/layout/realplay_talkback_wnd.xml"
-    },
-    {
         "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/layout/act_facility_edit.xml",
         "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/layout/act_facility_edit.xml"
+    },
+    {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/layout/realplay_talkback_wnd.xml",
+        "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/layout/realplay_talkback_wnd.xml"
     },
     {
         "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/layout/itm_list_onoff.xml",
         "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/layout/itm_list_onoff.xml"
     },
     {
-        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/layout/sta_detail_new.xml",
-        "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/layout/sta_detail_new.xml"
-    },
-    {
         "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/layout/activity_farm_monitor_detail_sensors_item0.xml",
         "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/layout/activity_farm_monitor_detail_sensors_item0.xml"
+    },
+    {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/layout/sta_detail_new.xml",
+        "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/layout/sta_detail_new.xml"
     },
     {
         "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/layout/activity_farm_monitor_detail_ctr_pager.xml",
@@ -140,12 +140,12 @@
         "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/layout/item_icon.xml"
     },
     {
-        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
-        "source": "/home/gejingbo/.android/build-cache/5e5ba618d3272f62f3657d47161e7ebdf430d13f/output/res/layout/abc_screen_toolbar.xml"
-    },
-    {
         "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/layout/act_facility_nodelist.xml",
         "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/layout/act_facility_nodelist.xml"
+    },
+    {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/home/gejingbo/.android/build-cache/5e5ba618d3272f62f3657d47161e7ebdf430d13f/output/res/layout/abc_screen_toolbar.xml"
     },
     {
         "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/layout/itm_txt.xml",

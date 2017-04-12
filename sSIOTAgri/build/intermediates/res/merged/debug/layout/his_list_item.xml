@@ -40,7 +40,6 @@
         android:id="@+id/his_itm_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/his_itm_batch"
         android:layout_toLeftOf="@id/his_itm_qr"
         android:gravity="center"
         android:layout_centerVertical="true"

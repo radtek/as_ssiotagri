@@ -57,6 +57,7 @@ import com.ssiot.remote.expert.DiagnoseFishSelectActivity;
 import com.ssiot.remote.expert.FacilityNodeListAct;
 import com.ssiot.remote.expert.WaterAnalysisLauncherAct;
 import com.ssiot.remote.expert.WaterColorDiagnoseAct;
+import com.ssiot.remote.history.HistoryAct;
 import com.ssiot.remote.myzxing.MipcaActivityCapture;
 import com.ssiot.remote.weather.AliYunWeatherAct;
 import com.ssiot.remote.weather.JuheWeatherAct;
@@ -170,9 +171,10 @@ public class FishMainActivity extends HeadActivity{
     	addToLinearAndClick(linear2, R.drawable.cell_crop_diagnose,"病害诊断");
     	addToLinearAndClick(linear3, R.drawable.cell_shenchanguanli,"生产管理");
     	addToLinearAndClick(linear3, R.drawable.cell_landfacility_manage,"设施管理");
+    	addToLinearAndClick(linear3, R.drawable.cell_trace,"溯源信息");
     	addToLinearAndClick(linear4, R.drawable.cell_help,"使用帮助");
     	addToLinearAndClick(linear4, R.drawable.cell_shichangdongtai,"消息记录");
-    	
+
         if ("gn".equalsIgnoreCase(mPref.getString(Utils.PREF_USERNAME, ""))){
         	addToLinearAndClick(linear3, R.drawable.cell_wuzijiaoyi,"灌南电商");
          }
@@ -284,9 +286,18 @@ public class FishMainActivity extends HeadActivity{
 				break;
 			case REQUEST_ADDDEVICE:
 				Intent i = new Intent(this, DeviceRegistAct.class);
-				String serialno = data.getStringExtra("qrcode");
-				i.putExtra("serialno", serialno);
-				startActivity(i);
+				String qrStr = data.getStringExtra("qrcode");
+
+                int beginIndex = qrStr.indexOf("=");
+//                qrStr.indexOf("&");
+                if (beginIndex > 0 && qrStr.indexOf("http://wap.farmer8.com/device.aspx?did=") >= 0) {
+                    String serialno = qrStr.substring(beginIndex + 1, qrStr.length());
+                    i.putExtra("serialno", serialno);
+                    startActivity(i);
+                } else {
+                    Toast.makeText(this,"二维码不正确 " + qrStr,Toast.LENGTH_SHORT).show();
+                }
+
 				break;
 
 			default:
@@ -434,6 +445,9 @@ public class FishMainActivity extends HeadActivity{
             } else if ("设施管理".equals(model.itemText)){
             	Intent intent = new Intent(FishMainActivity.this, FacilityManageAct.class);
             	startActivity(intent);
+            } else if ("溯源信息".equals(model.itemText)){
+                Intent intent = new Intent(FishMainActivity.this, HistoryAct.class);
+                startActivity(intent);
             } else if ("物资交易".equals(model.itemText)){
                 Intent intent = new Intent(FishMainActivity.this, BrowserActivity.class);
 				intent.putExtra("url", "http://wapcart.fisher88.com");

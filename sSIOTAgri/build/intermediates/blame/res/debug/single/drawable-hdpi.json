@@ -352,6 +352,10 @@
         "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/drawable-hdpi/spinner111.9.png"
     },
     {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/drawable-hdpi/selected.png",
+        "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/drawable-hdpi/selected.png"
+    },
+    {
         "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/drawable-hdpi/bg_navitem_pressed.9.png",
         "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/drawable-hdpi/bg_navitem_pressed.9.png"
     },
@@ -382,6 +386,10 @@
     {
         "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/drawable-hdpi/ic_section_pressure.png",
         "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/drawable-hdpi/ic_section_pressure.png"
+    },
+    {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/drawable-hdpi/bk_red.9.png",
+        "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/drawable-hdpi/bk_red.9.png"
     },
     {
         "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/drawable-hdpi/abc_ab_stacked_transparent_light_holo.9.png",
@@ -890,6 +898,10 @@
     {
         "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/drawable-hdpi/abc_ab_stacked_transparent_dark_holo.9.png",
         "source": "/home/gejingbo/.android/build-cache/8aa915bc91a8edc92546a358953682b5d8871d28/output/res/drawable-hdpi/abc_ab_stacked_transparent_dark_holo.9.png"
+    },
+    {
+        "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/drawable-hdpi/cell_trace.png",
+        "source": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/src/main/res/drawable-hdpi/cell_trace.png"
     },
     {
         "merged": "/home/gejingbo/AndroidStudioProjects/SSIOTAgri/sSIOTAgri/build/intermediates/res/merged/debug/drawable-hdpi/txt_bk_disease_resolve.9.png",

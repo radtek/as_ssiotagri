@@ -433,7 +433,7 @@ public class HeadActivity extends ActionBarActivity{
 	                for (int z = 0; z < y.list.size(); z ++){
 	                	DeviceBean d = y.list.get(z);
 	                	if (d.mDeviceTypeNo == sen && d.mChannel == ch){
-	                		d.valueStr = v;//保存数值字符串
+	                		d.valueStr = DeviceBean.getAccurancyedValueStr(v, sen);//;v;//保存数值字符串
 	                		d.value = (float) Float.parseFloat(v);//此值对第一个界面没有用
 	                		d.mTime = new Timestamp(((long)rtc * 1000));
 	                		d.status = 0;

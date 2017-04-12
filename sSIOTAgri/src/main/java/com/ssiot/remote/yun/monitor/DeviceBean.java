@@ -128,86 +128,8 @@ public class DeviceBean implements Serializable{
 
     public static List<SensorModel> sensorMap;
     private static HashMap<Integer, String> mSensorUnitMap = new HashMap<Integer, String>();
-    static{
-//        mSensorUnitMap.put(769, "%");//湿度
-//        mSensorUnitMap.put(770, "℃");//温度
-//        mSensorUnitMap.put(771, "hPa");//大气压？？
-//        mSensorUnitMap.put(772, "mm");//雨量
-//        mSensorUnitMap.put(773, "度");//风向
-//        mSensorUnitMap.put(774, "m/s");//风速
-//        mSensorUnitMap.put(1001, "");//PH
-//        mSensorUnitMap.put(1002, "mg/l");//溶解氧？
-//        mSensorUnitMap.put(1003, "ppm");//氨离子
-//        mSensorUnitMap.put(1006, "%");//溶解氧饱和度？
-//        mSensorUnitMap.put(1007, "");//溶解氧相位
-//        mSensorUnitMap.put(1008, "mg/l");//氨氮
-//        mSensorUnitMap.put(1009, "PPM");//铅离子
-//        mSensorUnitMap.put(1010, "PPM");//镉离子
-//        mSensorUnitMap.put(1011, "PPM");//氟离子传感器
-//        mSensorUnitMap.put(1020, "μS/cm");//电导率
-//        mSensorUnitMap.put(1022, "‰");//盐度传感器
-//        mSensorUnitMap.put(1025, "%");//土壤水分传感器
-//        mSensorUnitMap.put(1102, "ppm");//二氧化碳传感器浓度中
-//        mSensorUnitMap.put(1123, "ppm");//钠离子浓度
-//        mSensorUnitMap.put(1124, "mg/L");//钾离子
-//        mSensorUnitMap.put(1281, "Lux");//光照强度  Lux
-//        mSensorUnitMap.put(1282, "W");//光辐射度
-//        mSensorUnitMap.put(1301, "mm");//距离
-//        mSensorUnitMap.put(1302, "mm");//植物茎直径
-//        mSensorUnitMap.put(1303, "%");//叶面湿度
-//        mSensorUnitMap.put(1304, "mg/min");//植物茎流量
-//        mSensorUnitMap.put(1305, "℃");//叶面温
-//        mSensorUnitMap.put(1306, "℃");//环境温
-//        mSensorUnitMap.put(1401, "V");//电池电量
-//        mSensorUnitMap.put(1402, "V");//电池电压
-//        mSensorUnitMap.put(6101, "m3");//累计流量
-//        mSensorUnitMap.put(6201, "m3/h");//实时流量
-//        mSensorUnitMap.put(7101, "度");//经度
-//        mSensorUnitMap.put(7102, "度");//纬度
-//        mSensorUnitMap.put(7201, "Knots");//速度
-//        mSensorUnitMap.put(7202, "度");//方位角
-//        mSensorUnitMap.put(7203, "度");//磁偏角
-//        mSensorUnitMap.put(8001, "m/s");//十分钟平均风速
-//        mSensorUnitMap.put(8002, "度");//十分钟平均风向
-//        mSensorUnitMap.put(8003, "w");//总辐射传感器
-//        mSensorUnitMap.put(8004, "h");//日照时数传感器
-//        mSensorUnitMap.put(8005, "mm");//十分钟累计雨量
-//        mSensorUnitMap.put(8006, "ppm");//亚硝酸盐传感器
-//        mSensorUnitMap.put(8007, "cm");//水位传感器
-//        mSensorUnitMap.put(8008, "ppm");//水氨氮传感器
-//        mSensorUnitMap.put(8009, "NTU");//浊度传感器
-//        mSensorUnitMap.put(8010, "mg/L");//COD传感器
-//        mSensorUnitMap.put(8011, "ppm");//氨气传感器
-//        mSensorUnitMap.put(8012, "ppm");//硫化氢传感器
-//        mSensorUnitMap.put(8013, "℃");//水温
-//        mSensorUnitMap.put(8014, "ppm");//土壤肥力
-//        mSensorUnitMap.put(8015, "℃");//土壤温度
-//        mSensorUnitMap.put(8016, "℃");//气温
-//        mSensorUnitMap.put(8017, "dB");//分贝
-//        mSensorUnitMap.put(8018, "ug/m3");//粉尘
-//        mSensorUnitMap.put(8019, "λ/nm");//光谱
-//        mSensorUnitMap.put(8020, "ug/m3");//扬尘
-//        mSensorUnitMap.put(8021, "");//土壤ph
-//        mSensorUnitMap.put(8022, "℃");//草料温度
-//        mSensorUnitMap.put(8023, "℃");//空气温度
-//        mSensorUnitMap.put(8024, "℃");//环境温度
-//        mSensorUnitMap.put(8025, "%");//环境湿度
-//        mSensorUnitMap.put(8026, "Lux");//光照照度
-//        mSensorUnitMap.put(8027, "℃");//设定温度
-//        mSensorUnitMap.put(8028, "%");//设定湿度
-//        mSensorUnitMap.put(8029, "ppm");//设定COⅡ浓度
-//        mSensorUnitMap.put(8030, "cm");//果实大小
-//        mSensorUnitMap.put(8031, "");//系统开关机输出状态
-//        mSensorUnitMap.put(8032, "");//门磁
-//        mSensorUnitMap.put(8033, "ppm");//硝酸根离子
-//        mSensorUnitMap.put(8034, "");//开关状态
-//        mSensorUnitMap.put(8035, "ppm");//铜离子
-//        mSensorUnitMap.put(8036, "ppm");//溴离子
-//        mSensorUnitMap.put(8037, "ppm");//钙离子
-//        mSensorUnitMap.put(8038, "ppm");//硬度
-//        mSensorUnitMap.put(8039, "v");//ORP
-    }
-    
+    private static HashMap<Integer, Integer> mSensorAccurancyMap = new HashMap<Integer, Integer>();
+
     public static void updateunit(){
     	if (!UNIT_UPDATED){
     		new Thread(new Runnable() {
@@ -219,6 +141,7 @@ public class DeviceBean implements Serializable{
 					for (int i = 0; i < sensors.size(); i ++){
 						int sensorno = sensors.get(i)._sensorno;
 						mSensorUnitMap.put(sensorno, sensors.get(i)._unit);
+                        mSensorAccurancyMap.put(sensorno, sensors.get(i)._accuracy);
 					}
 					if (sensors.size() > 0 && mSensorUnitMap.size() > 0){
 						UNIT_UPDATED = true;
@@ -229,19 +152,37 @@ public class DeviceBean implements Serializable{
     	}
     }
 
-    private void updateAccurancy(){
+    public static String getFormatedAccurancy(String dataStr, int accurancy){
+        if (accurancy >= 0){
+            int dotIndex = dataStr.indexOf(".");
+            if (dotIndex >= 0){
+                try {
+                    return dataStr.substring(0,dotIndex + accurancy);
+                } catch (Exception e){
 
-    }
-
-    public static int getaccurancy(int sensorno){//必须要参数
-        if (null != sensorMap) {
-            for (SensorModel m : sensorMap) {
-                if (m._sensorno == sensorno){
-                    return m._accuracy;
                 }
             }
         }
+        return dataStr;
+    }
+
+    public static int getaccurancy(int sensorno){//必须要参数
+//        if (null != sensorMap) {
+//            for (SensorModel m : sensorMap) {
+//                if (m._sensorno == sensorno){
+//                    return m._accuracy;
+//                }
+//            }
+//        }
+        if (mSensorAccurancyMap.containsKey(sensorno)) {
+            return mSensorAccurancyMap.get(sensorno);
+        }
         return -1;
+    }
+
+    public static String getAccurancyedValueStr(String dataStr, int sensorno){
+        int accurancy = getaccurancy(sensorno);
+        return getFormatedAccurancy(dataStr, accurancy);
     }
     
     public DeviceBean(int type, int deviceTypeNo, String name) {// 例如 光照

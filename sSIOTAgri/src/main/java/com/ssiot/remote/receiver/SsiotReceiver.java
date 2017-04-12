@@ -12,10 +12,12 @@ import android.content.SharedPreferences.Editor;
 import android.net.Uri;
 import android.os.Build;
 import android.preference.PreferenceManager;
+import android.support.v4.content.FileProvider;
 import android.util.Log;
 import android.widget.RemoteViews;
 import android.widget.Toast;
 
+import com.ssiot.agri.BuildConfig;
 import com.ssiot.agri.R;
 import com.ssiot.remote.SettingFrag;
 import com.ssiot.remote.SsiotService;
@@ -168,8 +170,24 @@ public class SsiotReceiver extends BroadcastReceiver{
         }
         // 通过Intent安装APK文件
         Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); 
-        i.setDataAndType(Uri.parse("file://" + apkfile.toString()), "application/vnd.android.package-archive");
+        try {
+            String[] command = {"chmod", "777", apkfile.toString()};
+            ProcessBuilder builder = new ProcessBuilder(command);
+            builder.start();
+        } catch (IOException ignored) {
+            ignored.printStackTrace();
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {//android7.0的新限制
+            i.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            Uri contentUri = FileProvider.getUriForFile(context,
+                    BuildConfig.APPLICATION_ID + ".fileProvider", apkfile);
+            i.setDataAndType(contentUri, "application/vnd.android.package-archive");
+        } else {
+            i.setDataAndType(Uri.fromFile(apkfile), "application/vnd.android.package-archive");
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        }
+//        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//        i.setDataAndType(Uri.parse("file://" + apkfile.toString()), "application/vnd.android.package-archive");
         context.startActivity(i);
     }
     

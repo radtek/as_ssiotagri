@@ -21,6 +21,9 @@ public class ERPProductsPackModel implements Serializable,GetCustomShowInterface
     public String _prodesc;
     public String _comdesc;
     public String _qrcode;
+
+    public String _qrimgurl;
+    public String _probatchno;
     
     @Override
     public String getTitle() {

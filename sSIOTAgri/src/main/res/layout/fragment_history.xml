@@ -2,8 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.ssiot.remote.MainActivity" >
+    android:orientation="vertical" >
     
 
     <RelativeLayout 
@@ -14,36 +13,14 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="40dp"
-        android:background="#fff0f0f0"
         >
-        <Button 
-            android:id="@+id/startsearch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:text="@string/search"
-            android:textColor="@color/ssiotgreen"
-            android:background="@drawable/search_bk_selector"/>
-        <ImageButton 
+        <ImageButton
             android:id="@+id/startcamera"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/startsearch"
-            android:layout_alignTop="@id/startsearch"
-            android:layout_alignBottom="@id/startsearch"
+			android:layout_centerInParent="true"
             android:src="@drawable/start_camera"
             android:background="@drawable/search_bk_selector"/>
-        <EditText 
-            android:id="@+id/qrcode_edit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/startcamera"
-            android:layout_alignTop="@id/startcamera"
-            android:layout_alignBottom="@id/startcamera"
-            android:background="@drawable/search_bk"
-            android:hint="输入或扫描二维码"
-            android:singleLine="true"
-            />
     </RelativeLayout>
     
 	<LinearLayout

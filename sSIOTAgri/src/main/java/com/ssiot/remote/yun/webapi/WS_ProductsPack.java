@@ -35,6 +35,13 @@ public class WS_ProductsPack extends WebBasedb2 {
         String txt = exeRetString(MethodFile, "GetProductsPack", params);
         return parse(txt);
     }
+
+    public List<ERPProductsPackModel> GetProductsPackVirtual(int mainUserid) {
+        HashMap<String, String> params = new HashMap<String, String>();
+        params.put("where", "BatchID < 0 and UserID=" + mainUserid+"");
+        String txt = exeRetString(MethodFile, "GetProductsPack", params);
+        return parse(txt);
+    }
     
     public List<ERPProductsPackModel> GetProductsPackByBatch(int batchid) {
         HashMap<String, String> params = new HashMap<String, String>();
@@ -121,6 +128,10 @@ public class WS_ProductsPack extends WebBasedb2 {
                     	cType._comdesc = valueStr;
                     } else if (nodeName.equals("QRCode")){
                     	cType._qrcode = valueStr;
+                    } else if (nodeName.equals("QRImgUrl")){
+                        cType._qrimgurl = valueStr;
+                    } else if (nodeName.equals("ProBatchNo")){
+                        cType._probatchno = valueStr;
                     }
                 }
                 models.add(cType);
